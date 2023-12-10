@@ -16,12 +16,14 @@ My research interest includes Dynamic 3D Reconstruction, Out-of-distribution Seg
 My academic advisor is [Prof. Narendra Ahuja](https://ece.illinois.edu/about/directory/faculty/n-ahuja). I was fortunate to work with [Prof. Ming-Hsuan Yang](https://faculty.ucmerced.edu/mhyang/), [Dr. Lu Qi](http://luqi.info/), and [Prof. Ruimao Zhang](http://zhangruimao.site/).
 
 
-News:
+News
 ======
-2023.12.8 One paper is accepted by AAAI 2024!
+2023.12.8 One paper is accepted by AAAI 2024！
+
 2023.10.24 One paper is accepted by WACV 2024!
 
-Publications:
+
+Publications
 ======
 - **Hao Zhang**, Fang Li, Samyak Rawlekar, Narendra Ahuja  
   _LIMR: Learning Implicit Representation for Reconstructing Articulated Objects_.  
@@ -31,7 +33,6 @@ Publications:
 - **Hao Zhang**, Fang Li, Lu Qi, Ming-Hsuan Yang, and Narendra Ahuja  
   _CSL: Class-Agnostic Structure-Constrained Learning for Segmentation Including the Unseen_.  
   Accepted by AAAI 2024
-  <!-- [link](http://linktoyourpaper1.com) -->
 
 - **Hao Zhang**, Fang Li, Narendra Ahuja  
   _Open-NeRF: Towards Open Vocabulary NeRF Decomposition_.  
