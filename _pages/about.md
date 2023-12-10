@@ -13,6 +13,32 @@ I'm a second-year PhD student at the ECE Department of the University of Illinoi
 
 My research interest includes Dynamic 3D Reconstruction, Out-of-distribution Segmentation, and Domain Adaptation.
 
-My academic advisor is [Prof. Narendra Ahuja](https://ece.illinois.edu/about/directory/faculty/n-ahuja) I was fortunate to work with [Prof. Ming-Hsuan Yang](https://faculty.ucmerced.edu/mhyang/), [Dr. Lu Qi](http://luqi.info/), and [Prof. Ruimao Zhang](http://zhangruimao.site/).
+My academic advisor is [Prof. Narendra Ahuja](https://ece.illinois.edu/about/directory/faculty/n-ahuja). I was fortunate to work with [Prof. Ming-Hsuan Yang](https://faculty.ucmerced.edu/mhyang/), [Dr. Lu Qi](http://luqi.info/), and [Prof. Ruimao Zhang](http://zhangruimao.site/).
+
+
+News:
+======
+2023.12.8 One paper is accepted by AAAI 2024!
+2023.10.24 One paper is accepted by WACV 2024!
+
+Publications:
+======
+- **Hao Zhang**, Fang Li, Samyak Rawlekar, Narendra Ahuja  
+  _LIMR: Learning Implicit Representation for Reconstructing Articulated Objects_.  
+  [ICLR 2024 In Submission](https://openreview.net/pdf?id=KQ2i6jazVK)  
+  Rank: 754/7304 (Nov.22th)
+
+- **Hao Zhang**, Fang Li, Lu Qi, Ming-Hsuan Yang, and Narendra Ahuja  
+  _CSL: Class-Agnostic Structure-Constrained Learning for Segmentation Including the Unseen_.  
+  Accepted by AAAI 2024
+  <!-- [link](http://linktoyourpaper1.com) -->
+
+- **Hao Zhang**, Fang Li, Narendra Ahuja  
+  _Open-NeRF: Towards Open Vocabulary NeRF Decomposition_.  
+  [Accepted by WACV 2024](https://arxiv.org/abs/2310.16383)
+
+- **Hao Zhang**, Ruimao Zhang  
+  _Active Domain Adaptation with Multi-level Contrastive Units for Semantic Segmentation_.  
+  [Accepted by ACCV 2022](https://openaccess.thecvf.com/content/ACCV2022/papers/Zhang_Active_Domain_Adaptation_with_Multi-level_Contrastive_Units_for_Semantic_Segmentation_ACCV_2022_paper.pdf)
 
 
