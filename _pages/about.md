@@ -15,5 +15,4 @@ My research interest includes Dynamic 3D Reconstruction, Out-of-distribution Seg
 
 My academic advisor is [Prof. Narendra Ahuja](https://ece.illinois.edu/about/directory/faculty/n-ahuja) I was fortunate to work with [Prof. Ming-Hsuan Yang](https://faculty.ucmerced.edu/mhyang/), [Dr. Lu Qi](http://luqi.info/), and [Prof. Ruimao Zhang](http://zhangruimao.site/).
 
-[Email](haoz19@illinois.edu) / [Github](https://scholar.google.com/citations?user=KeDuEtcAAAAJ&hl=zh-CN)
 
