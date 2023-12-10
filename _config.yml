@@ -85,9 +85,9 @@ author:
   bio              : "PhD Student in ECE department from UIUC"
   location         : "Illinois"
   employer         :
-  pubmed           : "https://www.ncbi.nlm.nih.gov/pubmed/?term=john+snow"
+  pubmed           : 
   googlescholar    : "https://scholar.google.com/citations?user=KeDuEtcAAAAJ&hl=zh-CN"
-  email            :
+  email            : "haoz19@illinois.edu"
   researchgate     :  # example: "https://www.researchgate.net/profile/yourprofile"
   uri              :
   bitbucket        :
@@ -96,7 +96,7 @@ author:
   flickr           :
   facebook         :
   foursquare       :
-  github           : "academicpages"
+  github           : "https://github.com/haoz19"
   google_plus      :
   keybase          :
   instagram        :
