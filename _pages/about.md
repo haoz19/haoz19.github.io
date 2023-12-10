@@ -1,5 +1,7 @@
-I'm a second-year PhD student at the ECE Department of the University of Illinois Urbana-Champaign. My research interest includes Dynamic 3D Reconstruction and Out-of-distribution Segmentation.
+I'm a second-year PhD student at the ECE Department of the University of Illinois Urbana-Champaign (UIUC). I obtained my Master's degree from the ECE Department of the University of Southern California (USC) in 2021 and my B.E. degree in Communication Engineering from the Civil Aviation University of China in 2018.
 
-I am very fortunate to be advised by [Prof. Narendra Ahuja]([https://www.XXX.com/](https://ece.illinois.edu/about/directory/faculty/n-ahuja)) 
+My research interest includes Dynamic 3D Reconstruction, Out-of-distribution Segmentation, and Domain Adaptation.
 
-[Email](haoz19@illinois.edu) / [Github](https://github.com/haoz19)
+My academic advisor is [Prof. Narendra Ahuja](https://ece.illinois.edu/about/directory/faculty/n-ahuja) I was fortunate to work with [Prof. Ming-Hsuan Yang](https://faculty.ucmerced.edu/mhyang/), [Dr. Lu Qi](http://luqi.info/), and [Prof. Ruimao Zhang](http://zhangruimao.site/).
+
+[Email](haoz19@illinois.edu) / [Github](https://github.com/haoz19) /[Google Scholar](https://scholar.google.com/citations?user=KeDuEtcAAAAJ&hl=zh-CN)
