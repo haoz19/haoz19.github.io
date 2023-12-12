@@ -26,20 +26,20 @@ News
 Publications
 ======
 - **Hao Zhang**, Fang Li, Samyak Rawlekar, Narendra Ahuja  
-  _LIMR: Learning Implicit Representation for Reconstructing Articulated Objects_.  
-  [ICLR 2024 In Submission](https://openreview.net/pdf?id=KQ2i6jazVK)  
+  [_LIMR: Learning Implicit Representation for Reconstructing Articulated Objects_.](https://openreview.net/pdf?id=KQ2i6jazVK)  
+  ICLR 2024 In Submission  
   Rank: 754/7304 (Nov.22th)
 
 - **Hao Zhang**, Fang Li, Lu Qi, Ming-Hsuan Yang, and Narendra Ahuja  
-  _CSL: Class-Agnostic Structure-Constrained Learning for Segmentation Including the Unseen_.  
-  [Accepted by AAAI 2024](https://arxiv.org/abs/2312.05538)
+  [_CSL: Class-Agnostic Structure-Constrained Learning for Segmentation Including the Unseen_.](https://arxiv.org/abs/2312.05538)  
+  Accepted by AAAI 2024
 
 - **Hao Zhang**, Fang Li, Narendra Ahuja  
-  _Open-NeRF: Towards Open Vocabulary NeRF Decomposition_.  
-  [Accepted by WACV 2024](https://arxiv.org/abs/2310.16383)
+  [_Open-NeRF: Towards Open Vocabulary NeRF Decomposition_.](https://arxiv.org/abs/2310.16383)  
+  Accepted by WACV 2024
 
 - **Hao Zhang**, Ruimao Zhang  
-  _Active Domain Adaptation with Multi-level Contrastive Units for Semantic Segmentation_.  
-  [Accepted by ACCV 2022](https://openaccess.thecvf.com/content/ACCV2022/papers/Zhang_Active_Domain_Adaptation_with_Multi-level_Contrastive_Units_for_Semantic_Segmentation_ACCV_2022_paper.pdf)
+  [_Active Domain Adaptation with Multi-level Contrastive Units for Semantic Segmentation_.](https://openaccess.thecvf.com/content/ACCV2022/papers/Zhang_Active_Domain_Adaptation_with_Multi-level_Contrastive_Units_for_Semantic_Segmentation_ACCV_2022_paper.pdf)  
+  Accepted by ACCV 2022
 
 
