@@ -41,5 +41,7 @@ Publications
 - **Hao Zhang**, Ruimao Zhang  
   [_Active Domain Adaptation with Multi-level Contrastive Units for Semantic Segmentation_.](https://openaccess.thecvf.com/content/ACCV2022/papers/Zhang_Active_Domain_Adaptation_with_Multi-level_Contrastive_Units_for_Semantic_Segmentation_ACCV_2022_paper.pdf)  
   Accepted by ACCV 2022
+
+
   ======
 
