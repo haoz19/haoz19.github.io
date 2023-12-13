@@ -14,14 +14,14 @@ I'm a second-year PhD student at the ECE Department of the University of Illinoi
 My research interest includes Dynamic 3D Reconstruction, Out-of-distribution Segmentation, and Domain Adaptation.
 
 My academic advisor is [Prof. Narendra Ahuja](https://ece.illinois.edu/about/directory/faculty/n-ahuja). I was fortunate to work with [Prof. Ming-Hsuan Yang](https://faculty.ucmerced.edu/mhyang/), [Dr. Lu Qi](http://luqi.info/), and [Prof. Ruimao Zhang](http://zhangruimao.site/).
-======
+
 
 News
 ======
 2023.12.8 One paper is accepted by AAAI 2024！
-======
+
 2023.10.24 One paper is accepted by WACV 2024!
-======
+
 
 Publications
 ======
@@ -43,5 +43,5 @@ Publications
   Accepted by ACCV 2022
 
 
-  ======
+
 
