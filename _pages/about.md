@@ -33,6 +33,7 @@ Publications
 - **Hao Zhang**, Fang Li, Lu Qi, Ming-Hsuan Yang, and Narendra Ahuja  
   [_CSL: Class-Agnostic Structure-Constrained Learning for Segmentation Including the Unseen_.](https://arxiv.org/abs/2312.05538)  
   Accepted by AAAI 2024
+  [Rank 1 @ SMIYC-Anomaly Track \& Obstacle Track (w/o OOD) on mean F1](https://segmentmeifyoucan.com/leaderboard)
 
 - **Hao Zhang**, Fang Li, Narendra Ahuja  
   [_Open-NeRF: Towards Open Vocabulary NeRF Decomposition_.]([https://arxiv.org/abs/2310.16383](https://openaccess.thecvf.com/content/WACV2024/html/Zhang_Open-NeRF_Towards_Open_Vocabulary_NeRF_Decomposition_WACV_2024_paper.html))  
