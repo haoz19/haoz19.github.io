@@ -9,7 +9,7 @@ redirect_from:
 ---
 
 
-I'm a second-year PhD student at the ECE Department of the University of Illinois Urbana-Champaign (UIUC). I obtained my Master's degree from the ECE Department of the University of Southern California (USC) in 2021 and my B.E. degree in Communication Engineering from the Civil Aviation University of China in 2018.
+I'm a second-year PhD student at the ECE Department of the University of Illinois Urbana-Champaign (UIUC). I obtained my Master's degree from the ECE Department of the University of Southern California (USC) in 2021 and my B.E. degree in Communication Engineering from the Civil Aviation University of China (CAUC) in 2018.
 
 My research interest includes Dynamic 3D Reconstruction/Generation, Out-of-distribution Segmentation, and Domain Adaptation.
 
@@ -20,16 +20,18 @@ I was fortunate to work as a researcher in the [Shanghai Ai Lab](https://www.shl
 
 News
 ======
-2023.12.8 One paper is accepted by AAAI 2024！
+2024.1.16 One paper (first author) is accepted by ICLR 2024!
 
-2023.10.24 One paper is accepted by WACV 2024!
+2023.12.8 One paper (first author) is accepted by AAAI 2024！
+
+2023.10.24 One paper (first author) is accepted by WACV 2024!
 
 
 Publications
 ======
 - **Hao Zhang**, Fang Li, Samyak Rawlekar, Narendra Ahuja  
   [_LIMR: Learning Implicit Representation for Reconstructing Articulated Objects_.](https://openreview.net/pdf?id=KQ2i6jazVK)  
-  ICLR 2024 In Submission  
+  Accepted by ICLR 2024  
   Rank: 754/7304 (Nov.22th)
 
 - **Hao Zhang**, Fang Li, Lu Qi, Ming-Hsuan Yang, and Narendra Ahuja  
@@ -44,6 +46,8 @@ Publications
 - **Hao Zhang**, Ruimao Zhang  
   [_Active Domain Adaptation with Multi-level Contrastive Units for Semantic Segmentation_.](https://openaccess.thecvf.com/content/ACCV2022/papers/Zhang_Active_Domain_Adaptation_with_Multi-level_Contrastive_Units_for_Semantic_Segmentation_ACCV_2022_paper.pdf)  
   Accepted by ACCV 2022
+
+
 
 
 
