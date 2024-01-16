@@ -40,7 +40,7 @@ Publications
   [Rank 1 @ SMIYC-Anomaly Track \& Obstacle Track (w/o OOD) on mean F1](https://segmentmeifyoucan.com/leaderboard)
 
 - **Hao Zhang**, Fang Li, Narendra Ahuja  
-  [_Open-NeRF: Towards Open Vocabulary NeRF Decomposition_.]([https://arxiv.org/abs/2310.16383](https://openaccess.thecvf.com/content/WACV2024/html/Zhang_Open-NeRF_Towards_Open_Vocabulary_NeRF_Decomposition_WACV_2024_paper.html))  
+  [_Open-NeRF: Towards Open Vocabulary NeRF Decomposition_.](https://openaccess.thecvf.com/content/WACV2024/html/Zhang_Open-NeRF_Towards_Open_Vocabulary_NeRF_Decomposition_WACV_2024_paper.html) 
   Accepted by WACV 2024
 
 - **Hao Zhang**, Ruimao Zhang  
