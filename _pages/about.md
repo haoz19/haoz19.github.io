@@ -31,8 +31,7 @@ Publications
 ======
 - **Hao Zhang**, Fang Li, Samyak Rawlekar, Narendra Ahuja  
   [_LIMR: Learning Implicit Representation for Reconstructing Articulated Objects_.](https://openreview.net/pdf?id=KQ2i6jazVK)  
-  Accepted by ICLR 2024  
-  Rank: 754/7304 (Nov.22th)
+  Accepted by ICLR 2024
 
 - **Hao Zhang**, Fang Li, Lu Qi, Ming-Hsuan Yang, and Narendra Ahuja  
   [_CSL: Class-Agnostic Structure-Constrained Learning for Segmentation Including the Unseen_.](https://arxiv.org/abs/2312.05538)  
