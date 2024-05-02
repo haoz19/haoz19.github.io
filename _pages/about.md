@@ -20,6 +20,10 @@ I was fortunate to work as a researcher in the [Shanghai Ai Lab](https://www.shl
 
 News
 ======
+2024.5.2 I will join Pixocial AI Lab in Seattle in 2024 Summer!
+
+2024.5.2 One paper (first author) is accepted by ICML 2024!
+
 2024.1.16 One paper (first author) is accepted by ICLR 2024!
 
 2023.12.8 One paper (first author) is accepted by AAAI 2024！
@@ -29,6 +33,10 @@ News
 
 Publications
 ======
+- **Hao Zhang**, Fang Li, Samyak Rawlekar, Narendra Ahuja  
+  [_S3O: A Dual-Phase Approach for Reconstructing Dynamic Shape and Skeleton of Articulated Objects from Single Monocular Video ]()  
+  Accepted by ICML 2024
+
 - **Hao Zhang**, Fang Li, Samyak Rawlekar, Narendra Ahuja  
   [_LIMR: Learning Implicit Representation for Reconstructing Articulated Objects_.](https://openreview.net/pdf?id=KQ2i6jazVK)  
   Accepted by ICLR 2024
