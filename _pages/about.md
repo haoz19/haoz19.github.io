@@ -34,7 +34,7 @@ News
 Publications
 ======
 - **Hao Zhang**, Fang Li, Samyak Rawlekar, Narendra Ahuja  
-  [_S3O: A Dual-Phase Approach for Reconstructing Dynamic Shape and Skeleton of Articulated Objects from Single Monocular Video ]()  
+  [_S3O: A Dual-Phase Approach for Reconstructing Dynamic Shape and Skeleton of Articulated Objects from Single Monocular Video_.]()  
   Accepted by ICML 2024
 
 - **Hao Zhang**, Fang Li, Samyak Rawlekar, Narendra Ahuja  
