@@ -13,7 +13,9 @@ I'm a second-year PhD student at the ECE Department of the University of Illinoi
 
 My academic advisor is [Prof. Narendra Ahuja](https://ece.illinois.edu/about/directory/faculty/n-ahuja). I was fortunate to work with [Prof. Ming-Hsuan Yang](https://faculty.ucmerced.edu/mhyang/), [Dr. Lu Qi](http://luqi.info/), and [Prof. Ruimao Zhang](http://zhangruimao.site/).
 
-I was fortunate to work as a researcher in the [Shanghai Ai Lab](https://www.shlab.org.cn/) and [CUHK, SZ](https://www.cuhk.edu.cn/en).
+I was fortunate to work as a researcher in the [Shanghai AI Lab](https://www.shlab.org.cn/) and [CUHK, SZ](https://www.cuhk.edu.cn/en).
+
+I like playing basketball and working out when I'm free.
 
 News
 ======
@@ -42,7 +44,7 @@ Work experience
   * Supervisor: [Dr. Haoxiang Li](https://resume.haoxiang.org/)
     
 * 2021.10-2022.6: Researcher
-  * [Shanghai Ai Lab](https://www.shlab.org.cn/)
+  * [Shanghai AI Lab](https://www.shlab.org.cn/)
   * Supervisor: [Prof. Jing Shao](https://amandajshao.github.io/)
 
 * 2021.3-2021.10: Research Assistant
