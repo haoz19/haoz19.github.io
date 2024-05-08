@@ -9,7 +9,7 @@ redirect_from:
 ---
 
 
-I am currently a second-year PhD student in the Electrical and Computer Engineering Department at the University of Illinois Urbana-Champaign (UIUC). My research interests encompass Dynamic 3D Reconstruction/Generation, Animation & Rigging, Out-of-distribution Segmentation, and Domain Adaptation. I'm open to discussions and collaborations, so feel free to [reach out](haoz19@illinois.edu).
+I am currently a second-year PhD student in the Electrical and Computer Engineering Department at the University of Illinois Urbana-Champaign (UIUC). My research interests encompass Dynamic 3D Reconstruction/Generation, Animation & Rigging, Out-of-distribution Segmentation, and Domain Adaptation. I'm open to discussions and collaborations, so feel free to reach out.
 
 My academic advisor is [Prof. Narendra Ahuja](https://ece.illinois.edu/about/directory/faculty/n-ahuja). I was fortunate to work with [Prof. Ming-Hsuan Yang](https://faculty.ucmerced.edu/mhyang/), [Dr. Lu Qi](http://luqi.info/), and [Prof. Ruimao Zhang](http://zhangruimao.site/).
 
