@@ -9,7 +9,9 @@ redirect_from:
 ---
 
 
-I am currently a second-year PhD student in the Electrical and Computer Engineering Department at the University of Illinois Urbana-Champaign (UIUC). My research interests encompass Dynamic 3D Reconstruction/Generation, Animation & Rigging, Out-of-distribution Segmentation, and Domain Adaptation. I'm open to discussions and collaborations, so feel free to reach out.
+I am currently a second-year PhD student in the Electrical and Computer Engineering Department at the University of Illinois Urbana-Champaign (UIUC). My research interests encompass Dynamic 3D Reconstruction/Generation, Animation & Rigging, Out-of-distribution Segmentation, and Domain Adaptation. 
+
+I'm open to discussions and collaborations, so feel free to reach out！
 
 My academic advisor is [Prof. Narendra Ahuja](https://ece.illinois.edu/about/directory/faculty/n-ahuja). I was fortunate to work with [Prof. Ming-Hsuan Yang](https://faculty.ucmerced.edu/mhyang/), [Dr. Lu Qi](http://luqi.info/), and [Prof. Ruimao Zhang](http://zhangruimao.site/).
 
@@ -21,7 +23,7 @@ News
 ======
 2024.5.2 I will join **Pixocial AI Lab** in Seattle in 2024 Summer!
 
-2024.5.2 One paper (first author) is accepted by **ICML 2024**!
+2024.5.2 One paper (first author) is accepted by **ICML 2024**! 
 
 2024.1.16 One paper (first author) is accepted by **ICLR 2024**!
 
@@ -40,10 +42,10 @@ Education
 Work experience
 ======
 * 2024 Summer: Intern Researcher
-  * [Pixocial AI Lab]([https://www.shlab.org.cn/](https://pixocial.com/))
+  * [Pixocial AI Lab](https://pixocial.com/)
   * Supervisor: [Dr. Haoxiang Li](https://resume.haoxiang.org/)
-    
-* 2021.10-2022.6: Researcher
+  
+* 2021.10-2022.6: Intern Researcher
   * [Shanghai AI Lab](https://www.shlab.org.cn/)
   * Supervisor: [Prof. Jing Shao](https://amandajshao.github.io/)
 
