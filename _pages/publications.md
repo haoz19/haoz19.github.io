@@ -6,12 +6,10 @@ author_profile: true
 ---
 
 
-You can also find my articles on <u><a href="{{https://scholar.google.com/citations?user=KeDuEtcAAAAJ&hl=zh-CN}}">my Google Scholar profile</a>.</u>
-
 
 Publications
 ======
-* 2024
+2024
   
 - **Hao Zhang**, Fang Li, Samyak Rawlekar, Narendra Ahuja  
   [_S3O: A Dual-Phase Approach for Reconstructing Dynamic Shape and Skeleton of Articulated Objects from Single Monocular Video_.]()  
@@ -30,7 +28,8 @@ Publications
   [_Open-NeRF: Towards Open Vocabulary NeRF Decomposition_.](https://openaccess.thecvf.com/content/WACV2024/html/Zhang_Open-NeRF_Towards_Open_Vocabulary_NeRF_Decomposition_WACV_2024_paper.html)
   Proceedings of the Winter Conference on Applications of Computer Vision (**WACV**) 2024
 
-* 2022
+2022
+
 - **Hao Zhang**, Ruimao Zhang  
   [_Active Domain Adaptation with Multi-level Contrastive Units for Semantic Segmentation_.](https://openaccess.thecvf.com/content/ACCV2022/papers/Zhang_Active_Domain_Adaptation_with_Multi-level_Contrastive_Units_for_Semantic_Segmentation_ACCV_2022_paper.pdf)  
   Proceedings of the Asian Conference on Computer Vision (**ACCV**) 2022
