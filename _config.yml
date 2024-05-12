@@ -9,7 +9,7 @@
 locale                   : "en-US"
 title                    : "Hao Zhang's Homepage"
 title_separator          : "-"
-name                     : &name "Your Name"
+name                     : &name "Hao Zhang"
 description              : &description "personal description"
 url                      : https://haoz19.github.io # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : "" # the subpath of your site, e.g. "/blog"
@@ -80,7 +80,7 @@ analytics:
 
 # Site Author
 author:
-  name             : "Hao Zhang"
+  name             : "Hao Zhang 张昊"
   avatar           : "profile.png"
   bio              : "PhD Student in ECE department at UIUC"
   location         : "Illinois"
