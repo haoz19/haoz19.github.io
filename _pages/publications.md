@@ -6,9 +6,6 @@ author_profile: true
 ---
 
 
-
-Publications
-======
 2024
   
 - **Hao Zhang**, Fang Li, Samyak Rawlekar, Narendra Ahuja  
