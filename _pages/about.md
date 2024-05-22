@@ -21,6 +21,8 @@ I like playing basketball and working out when I'm free.
 
 News
 ======
+2024.5.22 Our new project MagicPose4D is here: [https://boese0601.github.io/magicpose4d/index.html](https://boese0601.github.io/magicpose4d/index.html)!
+
 2024.5.2 I will join **Pixocial AI Lab** in Seattle in 2024 Summer!
 
 2024.5.2 One paper (first author) is accepted by **ICML 2024**! 
