@@ -8,7 +8,7 @@ author_profile: true
 Preprint:
 
 - **Hao Zhang**, Di Chang, Fang Li, Mohammad Soleymani, Narendra Ahuja  
-  [_MagicPose4D: Crafting Articulated Models with Appearance and Motion Control_.]([https://arxiv.org/pdf/2405.12607](https://boese0601.github.io/magicpose4d/index.html))  
+  [_MagicPose4D: Crafting Articulated Models with Appearance and Motion Control_.](https://boese0601.github.io/magicpose4d/index.html)
 
 2024
   
