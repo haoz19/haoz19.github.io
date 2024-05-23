@@ -55,6 +55,16 @@ Work experience
   * CUHK, SZ
   * Supervisor: [Prof. Ruimao Zhang](http://zhangruimao.site/)
 
+Professional Activities
+=====
+* Conference Review:
+  
+  Neural Information Systems Processing Conference (NeurIPS)
+
+* Journal Review:
+
+  IEEE Transaction on Image Processing (TIP)
+
 
 
 
