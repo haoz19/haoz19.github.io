@@ -10,6 +10,11 @@ Preprint:
 - **Hao Zhang**, Di Chang, Fang Li, Mohammad Soleymani, Narendra Ahuja  
   [_MagicPose4D: Crafting Articulated Models with Appearance and Motion Control_.](https://boese0601.github.io/magicpose4d/index.html)
 
+- Fang Li, **Hao Zhang**, Narendra Ahuja  
+  [_Self-Calibrating 4D Novel View Synthesis from Monocular Videos Using Gaussian Splatting_.](https://arxiv.org/abs/2406.01042v1)
+
+  
+
 2024
   
 - **Hao Zhang**, Fang Li, Samyak Rawlekar, Narendra Ahuja  
