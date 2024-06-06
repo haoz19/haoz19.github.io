@@ -9,19 +9,17 @@ redirect_from:
 ---
 
 
-I am currently a second-year PhD student in the Electrical and Computer Engineering Department at the University of Illinois Urbana-Champaign (UIUC). My research interests encompass Dynamic 3D Reconstruction/Generation, Animation & Rigging, Out-of-distribution Segmentation, and Domain Adaptation. 
-
-I'm open to discussions and collaborations, so feel free to reach out！
+I am currently a second-year PhD student in the Electrical and Computer Engineering Department at the University of Illinois Urbana-Champaign (UIUC). My research interests encompass 3D/4D Reconstruction/Generation, Animation & Rigging, Out-of-distribution Segmentation, and Domain Adaptation. 
 
 My academic advisor is [Prof. Narendra Ahuja](https://ece.illinois.edu/about/directory/faculty/n-ahuja). I was fortunate to work with [Prof. Ming-Hsuan Yang](https://faculty.ucmerced.edu/mhyang/), [Dr. Lu Qi](http://luqi.info/), and [Prof. Ruimao Zhang](http://zhangruimao.site/).
 
 I was fortunate to work as a researcher in the [Shanghai AI Lab](https://www.shlab.org.cn/) and [CUHK, SZ](https://www.cuhk.edu.cn/en).
 
-I like playing basketball and working out when I'm free.
+Looking for a research internship in 2025 Summer. I'm open to discussions and collaborations, so feel free to reach out！
 
 News
 ======
-2024.5.22 Our new project MagicPose4D is here: [https://boese0601.github.io/magicpose4d/index.html](https://boese0601.github.io/magicpose4d/index.html)!
+2024.5.22 Check our new project [MagicPose4D](https://boese0601.github.io/magicpose4d/index.html)!
 
 2024.5.2 I will join **Pixocial AI Lab** in Seattle in 2024 Summer!
 
