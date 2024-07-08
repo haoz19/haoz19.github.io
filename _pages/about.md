@@ -58,6 +58,7 @@ Professional Activities
 * Conference Review:
   
   Neural Information Systems Processing Conference (NeurIPS)
+  European Conference on Computer Vision (ECCV)
 
 * Journal Review:
 
