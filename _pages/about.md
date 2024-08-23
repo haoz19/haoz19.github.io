@@ -9,7 +9,7 @@ redirect_from:
 ---
 
 
-I am currently a second-year PhD student in the Electrical and Computer Engineering Department at the University of Illinois Urbana-Champaign (UIUC). My research interests encompass 3D/4D Reconstruction/Generation, Animation & Rigging, Out-of-distribution Segmentation, and Domain Adaptation. 
+I am currently a second-year PhD student in the Electrical and Computer Engineering Department at the University of Illinois Urbana-Champaign (UIUC). My research interests encompass 3D/4D Reconstruction/Generation, Animation & Rigging, and Physical Simulation in 3D vision. I was working on Out-of-distribution Segmentation and Domain Adaptation. 
 
 My academic advisor is [Prof. Narendra Ahuja](https://ece.illinois.edu/about/directory/faculty/n-ahuja). I was fortunate to work with [Prof. Ming-Hsuan Yang](https://faculty.ucmerced.edu/mhyang/), [Dr. Lu Qi](http://luqi.info/), and [Prof. Ruimao Zhang](http://zhangruimao.site/).
 
@@ -56,6 +56,7 @@ Work experience
 Professional Activities
 =====
 * Conference Review:
+  The International Conference on Learning Representations (ICLR)
   
   Neural Information Systems Processing Conference (NeurIPS)
   
