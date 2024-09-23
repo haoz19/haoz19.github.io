@@ -43,6 +43,10 @@ Education
 
 Work experience
 ======
+* 2024 Fall: Intern Researcher
+  * [Stability AI](https://stability.ai/)
+  * Supervisor: [Dr. Varun Jampani](https://varunjampani.github.io/)
+    
 * 2024 Summer: Intern Researcher
   * [Pixocial AI Lab](https://pixocial.com/)
   * Supervisor: [Dr. Haoxiang Li](https://resume.haoxiang.org/)
