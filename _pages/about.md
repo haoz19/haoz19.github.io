@@ -21,7 +21,7 @@ News
 ======
 2024.9.16 I will join **Stability AI** starting from Fall 2024 working on 4D/3D Gen!
 
-2024.5.22 Check our new project [MagicPose4D](https://boese0601.github.io/magicpose4d/index.html)!
+2024.5.22 Check our new project [MagicPose4D](https://magicpose4d.github.io/)!
 
 2024.5.2 I will join **Pixocial AI Lab** in Seattle in 2024 Summer!
 
