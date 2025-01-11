@@ -43,7 +43,7 @@ Education
 
 Work experience
 ======
-* 2024 Fall: Intern Researcher
+* 2024 Fall - Now: Intern Researcher
   * [Stability AI](https://stability.ai/)
   * Supervisor: [Dr. Varun Jampani](https://varunjampani.github.io/)
     
@@ -63,11 +63,16 @@ Professional Activities
 =====
 * Conference Review:
   
-  The International Conference on Learning Representations (ICLR)
+  International Conference on Learning Representations (ICLR)
   
   Neural Information Systems Processing Conference (NeurIPS)
   
   European Conference on Computer Vision (ECCV)
+
+  Conference on Computer Vision and Pattern Recognition (CVPR)
+
+  International Conference on Machine Learning (ICML)
+  
 
 * Journal Review:
 
