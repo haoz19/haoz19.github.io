@@ -15,7 +15,7 @@ My academic advisor is [Prof. Narendra Ahuja](https://ece.illinois.edu/about/dir
 
 I was fortunate to work as a researcher in the [Shanghai AI Lab](https://www.shlab.org.cn/) and [CUHK, SZ](https://www.cuhk.edu.cn/en).
 
-Looking for a research internship in 2025 Summer. I'm open to discussions and collaborations, so feel free to reach out！
+I'm open to discussions and collaborations, so feel free to reach out！ If you're in a similar situation as I was—switching majors, taking a gap year, and feeling anxious—I'd be more than happy to chat with you.
 
 News
 ======
