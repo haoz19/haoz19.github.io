@@ -9,13 +9,15 @@ redirect_from:
 ---
 
 
-I am currently a third-year PhD student in the Electrical and Computer Engineering Department at the University of Illinois Urbana-Champaign (UIUC) and a Research Scientist Intern in [Stability AI](https://stability.ai/). My research interests encompass 3D/4D Reconstruction/Generation, Animation & Rigging, and Physical Simulation in 3D Vision. I was working on Out-of-distribution Segmentation and Domain Adaptation. 
+I am currently a third-year PhD student in the Electrical and Computer Engineering Department at the University of Illinois Urbana-Champaign (UIUC) and a Research Scientist Intern in [Stability AI](https://stability.ai/) working with [Dr. Varun Jampani](https://varunjampani.github.io/). My research interests encompass 3D/4D Reconstruction/Generation, Animation & Rigging, and Physical Simulation in 3D Vision. I was working on Out-of-distribution Segmentation and Domain Adaptation. 
 
 My academic advisor is [Prof. Narendra Ahuja](https://ece.illinois.edu/about/directory/faculty/n-ahuja). I was fortunate to work with [Prof. Ming-Hsuan Yang](https://faculty.ucmerced.edu/mhyang/), [Dr. Lu Qi](http://luqi.info/).
 
 I was fortunate to work as a researcher in the [Shanghai AI Lab](https://www.shlab.org.cn/) and [CUHK, SZ](https://www.cuhk.edu.cn/en).
 
-I'm open to discussions and collaborations, so feel free to reach out！ If you're in a similar situation as I was—switching majors, taking a gap year, and feeling anxious—I'd be more than happy to chat with you.
+I'm open to discussions and collaborations, so feel free to reach out！
+
+If you're in a similar situation as I was—switching majors, taking a gap year, and feeling anxious—I'd be more than happy to chat with you (WeChat: zh17603602632).
 
 News
 ======
