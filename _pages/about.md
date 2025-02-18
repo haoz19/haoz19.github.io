@@ -21,7 +21,7 @@ If you're in a similar situation as I was—switching majors, taking a gap year,
 
 News
 ======
-2025.2.17 I won the Finalist Prize from Meshy’s Fellowship!
+2025.2.17 I won the Meshy’s Fellowship Finalist Prize!
 
 2024.9.16 I will join **Stability AI** starting from Fall 2024 working on 4D/3D Gen!
 
