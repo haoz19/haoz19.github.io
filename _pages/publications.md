@@ -7,16 +7,17 @@ author_profile: true
 
 Preprint:
 
-- **Hao Zhang**, Di Chang, Fang Li, Mohammad Soleymani, Narendra Ahuja  
-  [_MagicPose4D: Crafting Articulated Models with Appearance and Motion Control_.](https://boese0601.github.io/magicpose4d/index.html)
-
 - Fang Li, **Hao Zhang**, Narendra Ahuja  
   [_Self-Calibrating 4D Novel View Synthesis from Monocular Videos Using Gaussian Splatting_.](https://arxiv.org/abs/2406.01042v1)
 
   
+2025
+- **Hao Zhang**, Di Chang, Fang Li, Mohammad Soleymani, Narendra Ahuja   
+  [_MagicPose4D: Crafting Articulated Models with Appearance and Motion Control_.](https://boese0601.github.io/magicpose4d/index.html)    
+  Proceedings of the Transactions on Machine Learning Research (**TMLR**) 2025
 
-2024
-  
+
+2024  
 - **Hao Zhang**, Fang Li, Samyak Rawlekar, Narendra Ahuja  
   [_S3O: A Dual-Phase Approach for Reconstructing Dynamic Shape and Skeleton of Articulated Objects from Single Monocular Video_.](https://arxiv.org/pdf/2405.12607)  
   Proceedings of the International Conference on Machine Learning (**ICML**) 2024
@@ -31,7 +32,7 @@ Preprint:
   [Rank 1 @ SMIYC-Anomaly Track \& Obstacle Track (w/o OOD) on mean F1](https://segmentmeifyoucan.com/leaderboard)
 
 - **Hao Zhang**, Fang Li, Narendra Ahuja  
-  [_Open-NeRF: Towards Open Vocabulary NeRF Decomposition_.](https://openaccess.thecvf.com/content/WACV2024/html/Zhang_Open-NeRF_Towards_Open_Vocabulary_NeRF_Decomposition_WACV_2024_paper.html)
+  [_Open-NeRF: Towards Open Vocabulary NeRF Decomposition_.](https://openaccess.thecvf.com/content/WACV2024/html/Zhang_Open-NeRF_Towards_Open_Vocabulary_NeRF_Decomposition_WACV_2024_paper.html)  
   Proceedings of the Winter Conference on Applications of Computer Vision (**WACV**) 2024
 
 2022
