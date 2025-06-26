@@ -21,9 +21,11 @@ If you're in a similar situation as I was—switching majors, taking a gap year,
 
 News
 ======
+2025.6.25 **PhysRig** (first author) is accepted by **ICCV 2025**! 
+
 2025.6.2 I will join **Snap Research** in New York in 2025 Summer!
 
-2025.5.27 One paper (first author) is accepted by **TMLR**!
+2025.5.27 One paper (first author) is accepted by **TMLR 2025**!
 
 2025.2.17 I won the Meshy’s Fellowship Finalist Prize!
 
@@ -51,7 +53,11 @@ Education
 
 Work experience
 ======
-* 2024 Fall - Now: Intern Researcher
+* 2025 Summer - Now: Intern Researcher
+  * [Snap Research](https://research.snap.com/team/computational-imaging.html)
+  * Supervisor: [Dr. Bing Zhou](https://research.snap.com/team_members/bing-zhou.html)  [Dr. Jian Wang](https://research.snap.com/team_members/jian--james--wang.html)
+    
+* 2024 Fall - 2025 Summer: Intern Researcher
   * [Stability AI](https://stability.ai/)
   * Supervisor: [Dr. Varun Jampani](https://varunjampani.github.io/)
     
