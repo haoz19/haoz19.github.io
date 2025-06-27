@@ -21,7 +21,7 @@ If you're in a similar situation as I was—switching majors, taking a gap year,
 
 News
 ======
-2025.6.25 **PhysRig** (first author) is accepted by **ICCV 2025**! 
+2025.6.25 **[PhysRig](https://physrig.github.io/)** (first author) is accepted by **ICCV 2025**! 
 
 2025.6.2 I will join **Snap Research** in New York in 2025 Summer!
 
