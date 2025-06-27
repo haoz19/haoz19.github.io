@@ -12,6 +12,10 @@ Preprint:
 
   
 2025
+- **Hao Zhang**, Haolan Xu, Chun Feng, Varun Jampani, Narendra Ahuja   
+  [PhysRig: Differentiable Physics-Based Skinning and Rigging Framework for Realistic Articulated Object Modeling .](https://physrig.github.io/)    
+  Proceedings of the International Conference on Computer Vision (**ICCV**) 2025
+  
 - **Hao Zhang**, Di Chang, Fang Li, Mohammad Soleymani, Narendra Ahuja   
   [_MagicPose4D: Crafting Articulated Models with Appearance and Motion Control_.](https://boese0601.github.io/magicpose4d/index.html)    
   Proceedings of the Transactions on Machine Learning Research (**TMLR**) 2025
