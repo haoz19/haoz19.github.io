@@ -20,7 +20,7 @@ If you're in a similar situation as I was—switching majors, taking a gap year,
 
 ## News
 
-- **2025.6.25** — **[PhysRig](https://physrig.github.io/)** (first author) accepted by **ICCV 2025**!  
+- **2025.6.25** — [PhysRig](https://physrig.github.io/) (first author) accepted by **ICCV 2025**!  
 - **2025.6.2** — I will join **Snap Research** in New York in Summer 2025!  
 - **2025.5.27** — One paper (first author) accepted by **TMLR 2025**!  
 - **2025.2.17** — Won the [Meshy’s Fellowship Finalist Prize](https://www.meshy.ai/blog/fellowship-2025)!  
