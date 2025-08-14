@@ -23,7 +23,7 @@ If you're in a similar situation as I was—switching majors, taking a gap year,
 - **2025.6.25** — **[PhysRig](https://physrig.github.io/)** (first author) accepted by **ICCV 2025**!  
 - **2025.6.2** — I will join **Snap Research** in New York in Summer 2025!  
 - **2025.5.27** — One paper (first author) accepted by **TMLR 2025**!  
-- **2025.2.17** — Won the Meshy’s Fellowship Finalist Prize!  
+- **2025.2.17** — Won the [Meshy’s Fellowship Finalist Prize](https://www.meshy.ai/blog/fellowship-2025)!  
 - **2024.9.16** — Will join **Stability AI** in Fall 2024 to work on 4D/3D Gen!  
 - **2024.5.22** — Check out our new project [MagicPose4D](https://magicpose4d.github.io/)!  
 - **2024.5.2** — Will join **Pixocial AI Lab** in Seattle in Summer 2024!  
