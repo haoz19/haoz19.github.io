@@ -1,0 +1,1235 @@
+<!doctype html>
+<html lang="en" data-theme="system">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Hao Zhang 张昊 — Homepage</title>
+  <meta name="description" content="Hao Zhang (张昊) — PhD student @ UIUC. Research: 3D/4D Reconstruction & Generation, Animation & Rigging, Physical Simulation." />
+  <!-- Open Graph / Twitter -->
+  <meta property="og:title" content="Hao Zhang — Homepage" />
+  <meta property="og:description" content="PhD student @ UIUC. 3D/4D Reconstruction & Generation, Animation & Rigging, Physical Simulation." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://haoz19.github.io" />
+  <meta property="og:image" content="https://unavatar.io/github/haoz19" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='0.9em' font-size='90'>✨</text></svg>">
+  <style>
+    :root {
+      --bg: #0a0b0d; --card: #12131a; --text: #f1f3f5; --muted: #a1a8b0; --brand: #60a5fa; --accent: #a855f7; --link: #3b82f6; --border: #1f2937; 
+      --shadow: 0 20px 40px rgba(0,0,0,.35); --shadow-lg: 0 25px 50px rgba(0,0,0,.5);
+      --radius-lg: 20px; --radius-md: 16px; --radius-sm: 12px; --radius-xl: 24px;
+      --gradient-brand: linear-gradient(135deg, #60a5fa 0%, #a855f7 100%);
+      --gradient-accent: linear-gradient(135deg, #f472b6 0%, #a855f7 50%, #60a5fa 100%);
+      --gradient-bg: radial-gradient(1400px 700px at 50% -20%, rgba(96, 165, 250, 0.15), transparent 70%), 
+                     radial-gradient(1000px 600px at 0% 50%, rgba(168, 85, 247, 0.1), transparent 70%), 
+                     radial-gradient(800px 400px at 100% 80%, rgba(244, 114, 182, 0.08), transparent 70%);
+    }
+    @media (prefers-color-scheme: light) {
+      html[data-theme="system"]:root { 
+        --bg: #ffffff; --card: #fafbfc; --text: #0f172a; --muted: #64748b; --brand: #2563eb; --accent: #7c3aed; --link: #1d4ed8; --border: #e2e8f0; 
+        --shadow: 0 10px 25px rgba(0,0,0,.1); --shadow-lg: 0 20px 40px rgba(0,0,0,.15);
+        --gradient-bg: radial-gradient(1400px 700px at 50% -20%, rgba(37, 99, 235, 0.08), transparent 70%), 
+                       radial-gradient(1000px 600px at 0% 50%, rgba(124, 58, 237, 0.06), transparent 70%), 
+                       radial-gradient(800px 400px at 100% 80%, rgba(244, 114, 182, 0.04), transparent 70%);
+      }
+    }
+    html[data-theme="dark"]:root { 
+      --bg: #0a0b0d; --card: #12131a; --text: #f1f3f5; --muted: #a1a8b0; --brand: #60a5fa; --accent: #a855f7; --link: #3b82f6; --border: #1f2937; 
+      --shadow: 0 20px 40px rgba(0,0,0,.35); --shadow-lg: 0 25px 50px rgba(0,0,0,.5);
+      --gradient-bg: radial-gradient(1400px 700px at 50% -20%, rgba(96, 165, 250, 0.15), transparent 70%), 
+                     radial-gradient(1000px 600px at 0% 50%, rgba(168, 85, 247, 0.1), transparent 70%), 
+                     radial-gradient(800px 400px at 100% 80%, rgba(244, 114, 182, 0.08), transparent 70%);
+    }
+    html[data-theme="light"]:root { 
+      --bg: #ffffff; --card: #fafbfc; --text: #0f172a; --muted: #64748b; --brand: #2563eb; --accent: #7c3aed; --link: #1d4ed8; --border: #e2e8f0; 
+      --shadow: 0 10px 25px rgba(0,0,0,.1); --shadow-lg: 0 20px 40px rgba(0,0,0,.15);
+      --gradient-bg: radial-gradient(1400px 700px at 50% -20%, rgba(37, 99, 235, 0.08), transparent 70%), 
+                     radial-gradient(1000px 600px at 0% 50%, rgba(124, 58, 237, 0.06), transparent 70%), 
+                     radial-gradient(800px 400px at 100% 80%, rgba(244, 114, 182, 0.04), transparent 70%);
+    }
+
+    *{box-sizing:border-box}
+    body{margin:0;font:16px/1.6 system-ui,-apple-system,Segoe UI,Roboto,"Helvetica Neue",Arial,"Noto Sans";background: var(--gradient-bg), var(--bg); color:var(--text); line-height:1.7}
+    a{color:var(--link);text-decoration:none;transition:all 0.2s ease} a:hover{text-decoration:underline;color:var(--brand)}
+    .container{max-width:1100px;margin:0 auto;padding:32px}
+    .topbar{position:sticky;top:0;z-index:10;backdrop-filter:saturate(180%) blur(16px);
+      background:color-mix(in oklab,var(--bg) 85%,transparent);border-bottom:1px solid color-mix(in oklab,var(--border),var(--brand) 20%);
+      transition:all 0.3s ease}
+    .topbar__inner{display:flex;align-items:center;justify-content:space-between;padding:16px 32px}
+    .brand{display:flex;align-items:center;gap:16px;transition:all 0.2s ease}
+    .brand:hover{transform:scale(1.02)}
+    .brand__avatar{width:36px;height:36px;border-radius:50%;border:2px solid transparent;box-shadow:var(--shadow);object-fit:cover;
+      background:var(--gradient-brand);background-clip:padding-box;transition:all 0.3s ease}
+    .brand__avatar:hover{transform:rotate(5deg) scale(1.1)}
+    .brand__name{font-weight:700;font-size:1.1rem}
+    nav{display:flex;align-items:center;gap:8px}
+    nav a{margin:0 8px;font-weight:600;color:var(--text);opacity:.85;padding:8px 16px;border-radius:var(--radius-sm);
+      transition:all 0.2s ease;position:relative}
+    nav a:hover{opacity:1;background:color-mix(in oklab,var(--brand),transparent 90%);color:var(--brand);transform:translateY(-1px)}
+    .theme-toggle{border:1px solid var(--border);background:var(--card);color:var(--text);border-radius:999px;
+      padding:8px 12px;cursor:pointer;transition:all 0.2s ease;font-size:1.1rem;position:relative}
+    .theme-toggle:hover{background:var(--gradient-brand);color:white;transform:scale(1.05)}
+    
+    /* Theme Settings Panel */
+    .theme-settings{position:absolute;top:100%;right:0;margin-top:8px;background:var(--card);border:1px solid var(--border);
+      border-radius:var(--radius-md);padding:16px;min-width:200px;box-shadow:var(--shadow-lg);backdrop-filter:blur(8px);
+      opacity:0;visibility:hidden;transform:translateY(-10px);transition:all 0.3s ease;z-index:100}
+    .theme-settings.active{opacity:1;visibility:visible;transform:translateY(0)}
+    .theme-option{display:flex;align-items:center;justify-content:space-between;padding:8px 0;border-bottom:1px solid var(--border);
+      font-size:0.9rem;color:var(--text)}
+    .theme-option:last-child{border-bottom:none}
+    .theme-option.active{color:var(--brand);font-weight:600}
+    .time-info{font-size:0.8rem;color:var(--muted);margin-top:8px;text-align:center;
+      padding:8px;background:color-mix(in oklab,var(--accent),transparent 90%);border-radius:var(--radius-sm)}
+
+    /* Hero */
+    .hero{display:grid;grid-template-columns:200px 1fr;gap:36px;align-items:center;margin-top:32px;padding:48px;
+      background: linear-gradient(135deg, var(--card) 0%, color-mix(in oklab, var(--card), var(--brand) 5%) 100%);
+      border:1px solid var(--border);border-radius:var(--radius-xl);box-shadow:var(--shadow-lg);
+      position:relative;overflow:hidden}
+    .hero::before{content:'';position:absolute;top:0;left:0;right:0;height:1px;background:var(--gradient-brand);opacity:0.6}
+    .hero .portrait{width:200px;height:200px;border-radius:var(--radius-lg);border:3px solid transparent;
+      background:var(--gradient-brand);background-clip:padding-box;object-fit:cover;
+      transition:transform 0.3s ease;box-shadow:var(--shadow-lg)}
+    .hero .portrait:hover{transform:scale(1.05)}
+    .hero h1{margin:0;font-size:2.5rem;font-weight:800;background:var(--gradient-brand);
+      -webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent;
+      background-size:200% 200%;animation:gradient-shift 4s ease infinite}
+    @keyframes gradient-shift{0%,100%{background-position:0% 50%}50%{background-position:100% 50%}}
+    .subtitle{color:var(--muted);margin-top:8px;font-size:1.1rem;line-height:1.5}
+    .links{display:flex;flex-wrap:wrap;gap:12px;margin-top:16px}
+    .pill{display:inline-flex;align-items:center;gap:10px;border:1px solid var(--border);
+      background:color-mix(in oklab,var(--card),transparent 10%);padding:8px 16px;border-radius:999px;
+      transition:all 0.2s ease;font-weight:500}
+    .pill:hover{transform:translateY(-2px);box-shadow:var(--shadow);border-color:var(--brand);background:color-mix(in oklab,var(--brand),transparent 90%)}
+
+    /* Section */
+    section{background:var(--card);border:1px solid var(--border);border-radius:var(--radius-lg);padding:32px;box-shadow:var(--shadow);margin-top:24px;
+      transition:all 0.3s ease;position:relative;overflow:hidden}
+    section::before{content:'';position:absolute;top:0;left:0;right:0;height:2px;background:var(--gradient-accent);opacity:0.4}
+    section:hover{transform:translateY(-2px);box-shadow:var(--shadow-lg)}
+    section h2{margin:0 0 16px;font-size:1.75rem;font-weight:700;color:var(--text);
+      background:var(--gradient-brand);-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent}
+    .muted{color:var(--muted);font-size:14px}
+
+    /* Experience & Education Card Styles */
+    .experience-list, .education-list{display:grid;gap:16px;margin:0;padding:0;list-style:none}
+    .experience-card, .education-card{
+      border:1px solid var(--border);border-radius:var(--radius-lg);
+      background:linear-gradient(135deg, color-mix(in oklab,var(--card),transparent 2%) 0%, color-mix(in oklab,var(--card),var(--brand) 3%) 100%);
+      overflow:hidden;transition:all 0.3s ease;position:relative;padding:20px}
+    .experience-card::before, .education-card::before{content:'';position:absolute;top:0;left:0;right:0;height:2px;background:var(--gradient-brand);opacity:0.4}
+    .experience-card:hover, .education-card:hover{transform:translateY(-4px);box-shadow:var(--shadow-lg);border-color:color-mix(in oklab,var(--brand),transparent 40%)}
+    
+    .exp-header, .edu-header{display:flex;align-items:center;gap:16px;margin-bottom:12px}
+    .exp-logo, .edu-logo{width:48px;height:48px;border-radius:var(--radius-md);object-fit:contain;
+      background:white;padding:6px;box-sizing:border-box;box-shadow:0 2px 8px rgba(0,0,0,0.1);transition:all 0.2s ease}
+    .experience-card:hover .exp-logo, .education-card:hover .edu-logo{transform:scale(1.05);box-shadow:0 4px 12px rgba(0,0,0,0.2)}
+    
+    .exp-info, .edu-info{flex:1}
+    .exp-title, .edu-title{font-weight:700;font-size:1.1rem;color:var(--text);margin-bottom:4px}
+    .exp-meta, .edu-meta{color:var(--muted);font-size:0.9rem;line-height:1.4}
+    .exp-badge, .edu-badge{padding:4px 12px;background:var(--gradient-brand);color:white;border-radius:999px;
+      font-size:11px;font-weight:700;box-shadow:var(--shadow);margin-left:auto}
+    .title{font-weight:700;font-size:1.1rem;line-height:1.4;margin-bottom:8px;color:var(--text)}
+    .meta{font-size:14px;color:var(--muted);line-height:1.5;margin-bottom:4px}
+    .links{margin-top:12px}
+    .links a{margin-right:12px;font-weight:600;padding:6px 16px;border-radius:999px;background:var(--gradient-brand);
+      color:white;transition:all 0.2s ease;text-decoration:none;font-size:13px}
+    .links a:hover{background:var(--gradient-accent);transform:translateY(-2px);box-shadow:var(--shadow)}
+
+    /* Publications specific styling */
+    .publication-card{display:grid;grid-template-columns:320px 1fr;gap:28px;border:1px solid var(--border);border-radius:var(--radius-lg);
+      background:linear-gradient(135deg, color-mix(in oklab,var(--card),transparent 2%) 0%, color-mix(in oklab,var(--card),var(--accent) 3%) 100%);
+      overflow:hidden;transition:all 0.3s ease;position:relative;margin-bottom:24px}
+    .publication-card::before{content:'';position:absolute;top:0;left:0;right:0;height:2px;background:var(--gradient-accent);opacity:0.5}
+    .publication-card:hover{transform:translateY(-8px);box-shadow:var(--shadow-lg);border-color:color-mix(in oklab,var(--brand),transparent 20%)}
+    .paper-thumb{width:100%;height:200px;object-fit:contain;background:white;
+      border-radius:var(--radius-md);transition:all 0.3s ease;padding:12px;box-sizing:border-box;
+      box-shadow:0 4px 12px rgba(0,0,0,0.1)}
+    .publication-card:hover .paper-thumb{transform:scale(1.03);box-shadow:0 8px 20px rgba(0,0,0,0.2)}
+    .paper-thumb-wrap{position:relative;padding:20px 0 20px 20px}
+    .paper-badge{position:absolute;top:24px;right:24px;background:var(--gradient-brand);color:white;font-weight:700;
+      padding:8px 16px;border-radius:999px;font-size:14px;box-shadow:var(--shadow);backdrop-filter:blur(8px)}
+
+    /* Two-column grid for Experience & Education */
+    .grid-2{display:grid;grid-template-columns:1fr 1fr;gap:24px}
+    @media (max-width:900px){.hero{grid-template-columns:1fr;text-align:center}.grid-2{grid-template-columns:1fr}
+      .publication-card{grid-template-columns:1fr;text-align:center}.paper-thumb{height:160px}
+      #pets > div:first-of-type{grid-template-columns:1fr;text-align:center}
+      #pets .thumb{width:220px;height:220px;margin:0 auto}
+      .exp-header, .edu-header{flex-direction:column;text-align:center;gap:12px}
+      .exp-badge, .edu-badge{margin:0}}
+
+    footer{color:var(--muted);text-align:center;padding:48px 12px 80px;position:relative}
+    footer::before{content:'';position:absolute;top:0;left:50%;transform:translateX(-50%);width:100px;height:1px;
+      background:var(--gradient-brand);opacity:0.6}
+    .sep{height:1px;background:var(--border);margin:20px 0}
+    .kbd{font-family:ui-monospace,SFMono-Regular,Menlo,Monaco,Consolas,monospace;font-size:13px;padding:4px 8px;
+      border-radius:8px;border:1px solid var(--border);background:color-mix(in oklab,var(--card),var(--brand) 5%);
+      color:var(--brand);font-weight:600}
+    
+    /* Image Modal Styles */
+    .image-modal{position:fixed;top:0;left:0;width:100%;height:100%;background:rgba(0,0,0,0.9);z-index:1000;
+      display:none;align-items:center;justify-content:center;backdrop-filter:blur(8px)}
+    .image-modal.active{display:flex;animation:fadeIn 0.3s ease}
+    .modal-content{position:relative;max-width:90vw;max-height:90vh;background:var(--card);border-radius:var(--radius-lg);
+      box-shadow:var(--shadow-lg);overflow:hidden;border:2px solid var(--border)}
+    .modal-image{width:100%;height:100%;object-fit:contain;background:white;border-radius:var(--radius-md)}
+    .modal-close{position:absolute;top:16px;right:16px;background:rgba(0,0,0,0.7);color:white;border:none;
+      border-radius:50%;width:40px;height:40px;cursor:pointer;font-size:20px;backdrop-filter:blur(8px);
+      transition:all 0.2s ease}
+    .modal-close:hover{background:rgba(0,0,0,0.9);transform:scale(1.1)}
+    .modal-caption{position:absolute;bottom:0;left:0;right:0;background:rgba(0,0,0,0.8);color:white;padding:16px 20px;
+      backdrop-filter:blur(8px);font-weight:500}
+    
+    /* Clickable images cursor */
+    .clickable-image{cursor:zoom-in !important;transition:all 0.2s ease}
+    .clickable-image:hover{filter:brightness(1.1);transform:scale(1.02)}
+
+    /* Additional Enhancements */
+    .media-body strong{background:var(--gradient-brand);-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent}
+    code{background:color-mix(in oklab,var(--accent),transparent 90%);color:var(--accent);padding:2px 6px;border-radius:4px;font-family:ui-monospace,SFMono-Regular,Menlo,Monaco,Consolas,monospace}
+    
+    /* Scroll behavior */
+    html{scroll-behavior:smooth}
+    
+    /* Enhanced visual effects */
+    .hero, section{animation:fadeInUp 0.6s ease forwards;opacity:0}
+    @keyframes fadeInUp{from{opacity:0;transform:translateY(30px)}to{opacity:1;transform:translateY(0)}}
+    @keyframes fadeIn{from{opacity:0}to{opacity:1}}
+    @keyframes zoomIn{from{opacity:0;transform:scale(0.8)}to{opacity:1;transform:scale(1)}}
+    .hero{animation-delay:0.1s}
+    section:nth-of-type(2){animation-delay:0.2s}
+    section:nth-of-type(3){animation-delay:0.3s}
+    .grid-2 section:nth-of-type(1){animation-delay:0.4s}
+    .grid-2 section:nth-of-type(2){animation-delay:0.5s}
+    section:last-of-type{animation-delay:0.6s}
+  </style>
+</head>
+<body>
+  <header class="topbar">
+    <div class="topbar__inner container">
+      <div class="brand">
+        <img class="brand__avatar" src="assets/img/pets/pets.jpg" alt="Fifi and Taotao"/>
+        <div class="brand__name">Hao Zhang <span class="muted">张昊</span></div>
+      </div>
+      <nav>
+        <a href="#about">About</a>
+        <a href="#news">News</a>
+        <a href="#publications">Publications</a>
+        <a href="#experience">Experience</a>
+        <a href="#education">Education</a>
+        <a href="#activities">Activities</a>
+        <div style="position:relative">
+          <button id="themeBtn" class="theme-toggle" title="Theme settings">🌓</button>
+          <div id="themeSettings" class="theme-settings">
+            <div class="theme-option" data-theme="auto">
+              <span>🌓 Auto (Day/Night)</span>
+              <span id="auto-status">✅</span>
+            </div>
+            <div class="theme-option" data-theme="light">
+              <span>☀️ Light Mode</span>
+              <span id="light-status"></span>
+            </div>
+            <div class="theme-option" data-theme="dark">
+              <span>🌙 Dark Mode</span>
+              <span id="dark-status"></span>
+            </div>
+            <div class="time-info" id="time-info">
+              🕐 Current: <span id="current-time">Loading...</span><br/>
+              Next switch: <span id="next-switch">Loading...</span>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <main id="content" class="container">
+    <!-- HERO -->
+    <section id="about" class="hero">
+      <img class="portrait clickable-image" src="assets/img/me/IMG_7561.PNG" alt="Hao Zhang"/>
+      <div>
+        <h1>Hao Zhang <span class="muted">张昊</span></h1>
+        <div class="subtitle">PhD Student @ UIUC · Research Scientist Intern @ Snap Research</div>
+        <div class="links">
+          <a class="pill" href="mailto:haoz19@illinois.edu">✉️ Email</a>
+          <a class="pill" href="https://x.com/HaoZhang623" target="_blank" rel="noreferrer">𝕏 Twitter</a>
+          <a class="pill" href="https://github.com/haoz19" target="_blank" rel="noreferrer">💻 GitHub</a>
+          <a class="pill" href="https://scholar.google.com/citations?hl=zh-CN&user=KeDuEtcAAAAJ" target="_blank" rel="noreferrer">📚 Google Scholar <span id="scholar-citations" style="opacity:0.8;font-weight:400">(73 citations, h-index: 5)</span></a>
+          <a class="pill" href="https://www.xiaohongshu.com/user/profile/5d7dbb7b00000000010089e3?xsec_token=ABjQOWKOSulQ-zUDV2H176BKTlUJSJtAgeOy2BM2PLGY4=&xsec_source=pc_note" target="_blank" rel="noreferrer">📝 小红书 Xiaohongshu <span id="xhs-followers" style="opacity:0.8;font-weight:400">(1K+ followers)</span></a>
+        </div>
+        <p style="margin-top:16px;font-size:1.05rem;line-height:1.6">I am a PhD student in ECE at <span style="color:var(--brand);font-weight:600">UIUC</span>, and a Research Scientist Intern at <span style="color:var(--accent);font-weight:600">Snap Research</span>. I work on <span style="background:var(--gradient-accent);-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent;font-weight:600">Dynamic 3D, 4D Reconstruction and Generation, Animation, Rigging, and Differential Physical Simulation</span> in 3D Vision.</p>
+        <p class="muted" style="margin-top:12px;padding:12px 20px;background:color-mix(in oklab,var(--accent),transparent 92%);border-radius:var(--radius-md);border-left:3px solid var(--accent)">🤝 Open to research collaborations, academic discussions, and mentoring. Feel free to reach out for potential partnerships or if you'd like to chat about 3D/4D research (WeChat: <span class="kbd">zh17603602632</span>).</p>
+      </div>
+    </section>
+
+    <!-- NEWS -->
+    <section id="news" style="background:linear-gradient(135deg, var(--card) 0%, color-mix(in oklab, var(--card), var(--brand) 3%) 100%)">
+      <h2>📰 News</h2>
+      <ul id="news-list" style="list-style:none;padding:0;margin:0">
+        <li class="news-item" style="padding:16px 20px;border:1px solid var(--border);border-radius:var(--radius-md);margin-bottom:12px;
+          background:color-mix(in oklab,var(--card),transparent 6%);transition:all 0.2s ease;position:relative">
+          <div style="position:absolute;top:16px;right:16px;background:var(--gradient-brand);color:white;font-weight:700;
+            padding:4px 12px;border-radius:999px;font-size:12px">2025.06.25</div>
+          <div class="title" style="margin-bottom:6px"><a href="https://physrig.github.io" target="_blank"><strong>PhysRig</strong></a> (first author) accepted by <strong>ICCV 2025</strong>!</div>
+          <div class="meta">Paper Acceptance</div>
+        </li>
+        <li class="news-item" style="padding:16px 20px;border:1px solid var(--border);border-radius:var(--radius-md);margin-bottom:12px;
+          background:color-mix(in oklab,var(--card),transparent 6%);transition:all 0.2s ease;position:relative">
+          <div style="position:absolute;top:16px;right:16px;background:var(--gradient-brand);color:white;font-weight:700;
+            padding:4px 12px;border-radius:999px;font-size:12px">2025.06.02</div>
+          <div class="title" style="margin-bottom:6px">I join <strong>Snap Research</strong> (NY) in Summer 2025</div>
+          <div class="meta">Internship</div>
+        </li>
+        <li class="news-item" style="padding:16px 20px;border:1px solid var(--border);border-radius:var(--radius-md);margin-bottom:12px;
+          background:color-mix(in oklab,var(--card),transparent 6%);transition:all 0.2s ease;position:relative">
+          <div style="position:absolute;top:16px;right:16px;background:var(--gradient-brand);color:white;font-weight:700;
+            padding:4px 12px;border-radius:999px;font-size:12px">2025.05.27</div>
+          <div class="title" style="margin-bottom:6px">One paper (first author) accepted by <strong>TMLR 2025</strong>!</div>
+          <div class="meta">Paper Acceptance</div>
+        </li>
+        <!-- Initially hidden news items -->
+        <li class="news-item hidden-news" style="padding:16px 20px;border:1px solid var(--border);border-radius:var(--radius-md);margin-bottom:12px;
+          background:color-mix(in oklab,var(--card),transparent 6%);transition:all 0.2s ease;position:relative;display:none">
+          <div style="position:absolute;top:16px;right:16px;background:var(--gradient-accent);color:white;font-weight:700;
+            padding:4px 12px;border-radius:999px;font-size:12px">2025.02.17</div>
+          <div class="title" style="margin-bottom:6px">🏆 Selected as <a href="https://www.meshy.ai/blog/fellowship-2025" target="_blank"><strong>Meshy Fellowship 2025 Finalist</strong></a>!</div>
+          <div class="meta">Fellowship · 1-year Meshy Max subscription for 3D AI research</div>
+        </li>
+        <li class="news-item hidden-news" style="padding:16px 20px;border:1px solid var(--border);border-radius:var(--radius-md);margin-bottom:12px;
+          background:color-mix(in oklab,var(--card),transparent 6%);transition:all 0.2s ease;position:relative;display:none">
+          <div style="position:absolute;top:16px;right:16px;background:var(--gradient-brand);color:white;font-weight:700;
+            padding:4px 12px;border-radius:999px;font-size:12px">2024.09.16</div>
+          <div class="title" style="margin-bottom:6px">Will join <strong>Stability AI</strong> in Fall 2024 to work on 4D/3D Gen!</div>
+          <div class="meta">Internship</div>
+        </li>
+
+        <li class="news-item hidden-news" style="padding:16px 20px;border:1px solid var(--border);border-radius:var(--radius-md);margin-bottom:12px;
+          background:color-mix(in oklab,var(--card),transparent 6%);transition:all 0.2s ease;position:relative;display:none">
+          <div style="position:absolute;top:16px;right:16px;background:var(--gradient-brand);color:white;font-weight:700;
+            padding:4px 12px;border-radius:999px;font-size:12px">2024.05.02</div>
+          <div class="title" style="margin-bottom:6px">Will join <strong>Pixocial AI Lab</strong> in Seattle in Summer 2024!</div>
+          <div class="meta">Internship</div>
+        </li>
+        <li class="news-item hidden-news" style="padding:16px 20px;border:1px solid var(--border);border-radius:var(--radius-md);margin-bottom:12px;
+          background:color-mix(in oklab,var(--card),transparent 6%);transition:all 0.2s ease;position:relative;display:none">
+          <div style="position:absolute;top:16px;right:16px;background:var(--gradient-brand);color:white;font-weight:700;
+            padding:4px 12px;border-radius:999px;font-size:12px">2024.05.02</div>
+          <div class="title" style="margin-bottom:6px">One paper (first author) accepted by <strong>ICML 2024</strong>!</div>
+          <div class="meta">Paper Acceptance</div>
+        </li>
+        <li class="news-item hidden-news" style="padding:16px 20px;border:1px solid var(--border);border-radius:var(--radius-md);margin-bottom:12px;
+          background:color-mix(in oklab,var(--card),transparent 6%);transition:all 0.2s ease;position:relative;display:none">
+          <div style="position:absolute;top:16px;right:16px;background:var(--gradient-brand);color:white;font-weight:700;
+            padding:4px 12px;border-radius:999px;font-size:12px">2024.01.16</div>
+          <div class="title" style="margin-bottom:6px">One paper (first author) accepted by <strong>ICLR 2024</strong>!</div>
+          <div class="meta">Paper Acceptance</div>
+        </li>
+        <li class="news-item hidden-news" style="padding:16px 20px;border:1px solid var(--border);border-radius:var(--radius-md);margin-bottom:12px;
+          background:color-mix(in oklab,var(--card),transparent 6%);transition:all 0.2s ease;position:relative;display:none">
+          <div style="position:absolute;top:16px;right:16px;background:var(--gradient-brand);color:white;font-weight:700;
+            padding:4px 12px;border-radius:999px;font-size:12px">2023.12.08</div>
+          <div class="title" style="margin-bottom:6px">One paper (first author) accepted by <strong>AAAI 2024</strong>!</div>
+          <div class="meta">Paper Acceptance</div>
+        </li>
+        <li class="news-item hidden-news" style="padding:16px 20px;border:1px solid var(--border);border-radius:var(--radius-md);margin-bottom:12px;
+          background:color-mix(in oklab,var(--card),transparent 6%);transition:all 0.2s ease;position:relative;display:none">
+          <div style="position:absolute;top:16px;right:16px;background:var(--gradient-brand);color:white;font-weight:700;
+            padding:4px 12px;border-radius:999px;font-size:12px">2023.10.24</div>
+          <div class="title" style="margin-bottom:6px">One paper (first author) accepted by <strong>WACV 2024</strong>!</div>
+          <div class="meta">Paper Acceptance</div>
+        </li>
+      </ul>
+      <button id="show-more-btn" style="margin-top:16px;padding:8px 20px;background:var(--gradient-brand);color:white;border:none;
+        border-radius:999px;font-weight:600;cursor:pointer;transition:all 0.2s ease;width:100%">
+        Show More News
+      </button>
+    </section>
+
+    <!-- PUBLICATIONS with large paper previews -->
+    <section id="publications" style="background:linear-gradient(135deg, var(--card) 0%, color-mix(in oklab, var(--card), var(--accent) 3%) 100%)">
+      <h2>🏆 Publications</h2>
+
+      <div class="publications-list">
+        <div class="publication-card">
+          <div class="paper-thumb-wrap"><img class="paper-thumb clickable-image" src="assets/img/papers/PhysRig.png" alt="PhysRig - Differentiable Physics‑Based Skinning and Rigging Framework"/><span class="paper-badge">ICCV 2025</span></div>
+          <div class="media-body">
+            <div class="title">PhysRig: Differentiable Physics‑Based Skinning and Rigging Framework for Realistic Articulated Object Modeling</div>
+            <div class="meta"><strong>Hao Zhang*</strong>, Haolan Xu*, Chun Feng, Varun Jampani, Narendra Ahuja</div>
+            <div class="meta"><em>International Conference on Computer Vision (ICCV), 2025</em></div>
+            <div class="links"><a href="https://physrig.github.io" target="_blank">🌐 Project Page</a></div>
+          </div>
+        </div>
+        <div class="publication-card">
+          <div class="paper-thumb-wrap"><img class="paper-thumb clickable-image" src="assets/img/papers/MagicPose4D.png" alt="MagicPose4D - Crafting Articulated Models with Appearance and Motion Control"/><span class="paper-badge">TMLR 2025</span></div>
+          <div class="media-body">
+            <div class="title">MagicPose4D: Crafting Articulated Models with Appearance and Motion Control</div>
+            <div class="meta"><strong>Hao Zhang*</strong>, Di Chang*, Fang Li, Mohammad Soleymani, Narendra Ahuja</div>
+            <div class="meta"><em>Transactions on Machine Learning Research (TMLR), 2025</em></div>
+            <div class="links"><a href="https://boese0601.github.io/magicpose4d/" target="_blank">🌐 Project Page</a></div>
+          </div>
+        </div>
+        <div class="publication-card">
+          <div class="paper-thumb-wrap"><img class="paper-thumb clickable-image" src="assets/img/papers/S3O.png" alt="S3O - Dual‑Phase Approach for Reconstructing Dynamic Shape and Skeleton"/><span class="paper-badge">ICML 2024</span></div>
+          <div class="media-body">
+            <div class="title">S3O: A Dual‑Phase Approach for Reconstructing Dynamic Shape and Skeleton of Articulated Objects from Single Monocular Video</div>
+            <div class="meta"><strong>Hao Zhang</strong>, Fang Li, Samyak Rawlekar, Narendra Ahuja</div>
+            <div class="meta"><em>International Conference on Machine Learning (ICML), 2024</em></div>
+            <div class="links"><a href="https://arxiv.org/abs/2405.12607" target="_blank">📄 Paper</a></div>
+          </div>
+        </div>
+        <div class="publication-card">
+          <div class="paper-thumb-wrap"><img class="paper-thumb clickable-image" src="assets/img/papers/LIMR.png" alt="LIMR - Learning Implicit Representation for Reconstructing Articulated Objects"/><span class="paper-badge">ICLR 2024</span></div>
+          <div class="media-body">
+            <div class="title">LIMR: Learning Implicit Representation for Reconstructing Articulated Objects</div>
+            <div class="meta"><strong>Hao Zhang</strong>, Fang Li, Samyak Rawlekar, Narendra Ahuja</div>
+            <div class="meta"><em>International Conference on Learning Representations (ICLR), 2024</em></div>
+            <div class="links"><a href="https://openreview.net/forum?id=KQ2i6jazVK" target="_blank">📄 Paper</a></div>
+          </div>
+        </div>
+        <div class="publication-card">
+          <div class="paper-thumb-wrap"><img class="paper-thumb clickable-image" src="assets/img/papers/CSL.png" alt="CSL - Class‑Agnostic Structure‑Constrained Learning for Segmentation"/><span class="paper-badge">AAAI 2024</span></div>
+          <div class="media-body">
+            <div class="title">CSL: Class‑Agnostic Structure‑Constrained Learning for Segmentation Including the Unseen</div>
+            <div class="meta"><strong>Hao Zhang</strong>, Fang Li, Lu Qi, Ming‑Hsuan Yang, Narendra Ahuja</div>
+            <div class="meta"><em>AAAI Conference on Artificial Intelligence (AAAI), 2024</em></div>
+            <div class="links"><a href="https://arxiv.org/abs/2312.05538" target="_blank">📄 Paper</a> · <a href="https://segmentmeifyoucan.com" target="_blank">🎯 SMIYC Results</a></div>
+          </div>
+        </div>
+        <div class="publication-card">
+          <div class="paper-thumb-wrap"><img class="paper-thumb clickable-image" src="assets/img/papers/OpenNeRF.png" alt="Open-NeRF - Towards Open Vocabulary NeRF Decomposition"/><span class="paper-badge">WACV 2024</span></div>
+          <div class="media-body">
+            <div class="title">Open‑NeRF: Towards Open Vocabulary NeRF Decomposition</div>
+            <div class="meta"><strong>Hao Zhang</strong>, Fang Li, Narendra Ahuja</div>
+            <div class="meta"><em>WACV, 2024</em></div>
+            <div class="links"><a href="https://openaccess.thecvf.com/content/WACV2024/html/Zhang_Open-NeRF_Towards_Open_Vocabulary_NeRF_Decomposition_WACV_2024_paper.html" target="_blank">📄 Paper</a></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- EXPERIENCE & EDUCATION with logos on the left -->
+    <div class="grid-2">
+      <section id="experience" style="background:linear-gradient(135deg, var(--card) 0%, color-mix(in oklab, var(--card), var(--brand) 2%) 100%)">
+        <h2>💼 Work Experience</h2>
+        <div id="experience-list" class="experience-list">
+          <div class="experience-card experience-item">
+            <div class="exp-header">
+              <img class="exp-logo" src="assets/img/logos/snap.jpg" alt="Snap"/>
+              <div class="exp-info">
+                <div class="exp-title"><strong>Snap Research</strong> — Research Scientist Intern</div>
+                <div class="exp-meta">New York, USA · 2025 Summer – Now · Supervisors: Bing Zhou, Jian Wang</div>
+              </div>
+              <div class="exp-badge">2025</div>
+            </div>
+          </div>
+          <div class="experience-card experience-item">
+            <div class="exp-header">
+              <img class="exp-logo" src="assets/img/logos/stability.png" alt="Stability AI"/>
+              <div class="exp-info">
+                <div class="exp-title"><strong>Stability AI</strong> — Research Scientist Intern</div>
+                <div class="exp-meta">2024 Fall – 2025 Summer · Supervisor: Varun Jampani</div>
+              </div>
+              <div class="exp-badge">2024–2025</div>
+            </div>
+          </div>
+          <div class="experience-card experience-item">
+            <div class="exp-header">
+              <div class="exp-logo" style="display:flex;align-items:center;justify-content:center;background:var(--gradient-brand);color:white;font-weight:800;font-size:0.5rem;text-align:center">PIXOCIAL<br/>AI</div>
+              <div class="exp-info">
+                <div class="exp-title"><strong>Pixocial AI Lab</strong> — Research Scientist Intern</div>
+                <div class="exp-meta">2024 Summer · Supervisor: Haoxiang Li</div>
+              </div>
+              <div class="exp-badge">2024</div>
+            </div>
+          </div>
+          <div class="experience-card experience-item hidden-experience" style="display:none;background:linear-gradient(135deg, color-mix(in oklab, var(--card), var(--brand) 8%) 0%, color-mix(in oklab, var(--card), var(--brand) 4%) 100%) !important;border-color:color-mix(in oklab, var(--brand), transparent 60%)">
+            <div class="exp-header">
+              <img class="exp-logo" src="assets/img/logos/shlab.webp" alt="Shanghai AI Lab" style="background:linear-gradient(135deg, #3b82f6 0%, #1d4ed8 100%);padding:4px"/>
+              <div class="exp-info">
+                <div class="exp-title"><strong>Shanghai AI Lab</strong> — Research Intern</div>
+                <div class="exp-meta">2021.10 – 2022.6 · Supervisor: Jing Shao</div>
+              </div>
+              <div class="exp-badge">2021–2022</div>
+            </div>
+          </div>
+        </div>
+        <button id="show-more-experience-btn" style="margin-top:16px;padding:8px 20px;background:var(--gradient-brand);color:white;border:none;
+          border-radius:999px;font-weight:600;cursor:pointer;transition:all 0.2s ease;width:100%">
+          Show More Experience
+        </button>
+      </section>
+
+      <section id="education" style="background:linear-gradient(135deg, var(--card) 0%, color-mix(in oklab, var(--card), var(--accent) 2%) 100%)">
+        <h2>🎓 Education</h2>
+        <div class="education-list">
+          <div class="education-card">
+            <div class="edu-header">
+              <img class="edu-logo" src="assets/img/logos/uiuc.png" alt="UIUC"/>
+              <div class="edu-info">
+                <div class="edu-title"><strong>University of Illinois Urbana‑Champaign (UIUC)</strong></div>
+                <div class="edu-meta">Ph.D. in Computer Vision · 2022–2027 (expected)</div>
+              </div>
+              <div class="edu-badge">Ph.D.</div>
+            </div>
+          </div>
+          <div class="education-card">
+            <div class="edu-header">
+              <img class="edu-logo" src="assets/img/logos/usc.png" alt="USC"/>
+              <div class="edu-info">
+                <div class="edu-title"><strong>University of Southern California (USC)</strong></div>
+                <div class="edu-meta">M.S. in Electrical & Computer Engineering · 2019–2020</div>
+              </div>
+              <div class="edu-badge">M.S.</div>
+            </div>
+          </div>
+          <div class="education-card">
+            <div class="edu-header">
+              <img class="edu-logo" src="assets/img/logos/CUSZ.png" alt="CUHK-Shenzhen"/>
+              <div class="edu-info">
+                <div class="edu-title"><strong>CUHK, Shenzhen</strong></div>
+                <div class="edu-meta">Visiting Student · 2021.3 – 2021.10 · Supervisor: Ruimao Zhang</div>
+              </div>
+              <div class="edu-badge">Visiting</div>
+            </div>
+          </div>
+          <div class="education-card">
+            <div class="edu-header">
+              <img class="edu-logo" src="assets/img/logos/CAUC.png" alt="CAUC"/>
+              <div class="edu-info">
+                <div class="edu-title"><strong>Civil Aviation University of China (CAUC)</strong></div>
+                <div class="edu-meta">B.S. in Telecommunication Engineering · 2014–2018</div>
+              </div>
+              <div class="edu-badge">B.S.</div>
+            </div>
+          </div>
+        </div>
+            </section>
+    </div>
+
+    <!-- PETS -->
+    <section id="pets" style="background:linear-gradient(135deg, var(--card) 0%, color-mix(in oklab, var(--card), var(--accent) 3%) 100%)">
+      <h2>🐶 My Beloved Companions</h2>
+      <div style="display:grid;grid-template-columns:280px 1fr;gap:28px;align-items:start;background:color-mix(in oklab,var(--card),transparent 6%);
+        border:1px solid var(--border);border-radius:var(--radius-lg);padding:24px;position:relative;overflow:hidden">
+        <div style="position:absolute;top:0;left:0;right:0;height:2px;background:var(--gradient-accent);opacity:0.4"></div>
+        
+        <!-- Shared Photo -->
+        <div class="thumb-wrap" style="position:relative;cursor:pointer" onmouseover="this.querySelector('img').style.transform='scale(1.03)'" onmouseout="this.querySelector('img').style.transform='scale(1)'">
+          <img class="thumb clickable-image" src="assets/img/pets/pets.jpg" alt="Fifi and Taotao - White Maltese Dogs" 
+            style="width:280px;height:280px;border-radius:var(--radius-lg);object-fit:cover;box-shadow:var(--shadow-lg);
+            transition:all 0.3s ease"/>
+          <div style="position:absolute;bottom:12px;left:12px;background:var(--gradient-accent);color:white;font-weight:700;
+            padding:6px 14px;border-radius:999px;font-size:12px;backdrop-filter:blur(8px)">🐾 My Companions</div>
+        </div>
+        
+        <!-- Dogs Info -->
+        <div style="display:grid;gap:20px">
+          <!-- Fifi -->
+          <div style="padding:20px;border:1px solid var(--border);border-radius:var(--radius-lg);
+            background:linear-gradient(135deg, color-mix(in oklab,var(--card),transparent 3%) 0%, color-mix(in oklab,var(--card),var(--brand) 3%) 100%)">
+            <div style="display:flex;align-items:center;gap:10px;margin-bottom:12px">
+              <div style="font-size:1.3rem;font-weight:700"><strong>Fifi</strong></div>
+              <div style="padding:3px 10px;background:var(--gradient-brand);color:white;border-radius:999px;font-size:11px;font-weight:700">6 lbs</div>
+            </div>
+            <div style="color:var(--muted);margin-bottom:8px">Born Aug 14, 2022</div>
+            <div style="color:var(--brand);font-weight:600;font-size:1.05rem">
+              <span id="fifi-age">Loading...</span> old
+            </div>
+          </div>
+          
+          <!-- Taotao -->
+          <div style="padding:20px;border:1px solid var(--border);border-radius:var(--radius-lg);
+            background:linear-gradient(135deg, color-mix(in oklab,var(--card),transparent 3%) 0%, color-mix(in oklab,var(--card),var(--accent) 3%) 100%)">
+            <div style="display:flex;align-items:center;gap:10px;margin-bottom:12px">
+              <div style="font-size:1.3rem;font-weight:700"><strong>Taotao</strong></div>
+              <div style="padding:3px 10px;background:var(--gradient-accent);color:white;border-radius:999px;font-size:11px;font-weight:700">4 lbs</div>
+            </div>
+            <div style="color:var(--muted);margin-bottom:8px">Born Feb 14, 2025</div>
+            <div style="color:var(--accent);font-weight:600;font-size:1.05rem">
+              <span id="taotao-age">Loading...</span> old
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  
+    <!-- ACTIVITIES -->
+    <section id="activities" style="background:linear-gradient(135deg, var(--card) 0%, color-mix(in oklab, var(--card), var(--brand) 2%) 100%)">
+      <h2>🌟 Professional Activities</h2>
+      <div style="margin-bottom:20px">
+        <div class="muted" style="font-weight:600;margin-bottom:8px;font-size:1rem">📋 Conference Reviewer</div>
+        <div style="padding:16px 20px;border:1px solid var(--border);border-radius:var(--radius-md);
+          background:color-mix(in oklab,var(--brand),transparent 90%);font-weight:500;color:var(--brand)">
+          ICLR, NeurIPS, ECCV, CVPR, ICML, AAAI
+        </div>
+      </div>
+      <div>
+        <div class="muted" style="font-weight:600;margin-bottom:8px;font-size:1rem">📖 Journal Reviewer</div>
+        <div style="padding:16px 20px;border:1px solid var(--border);border-radius:var(--radius-md);
+          background:color-mix(in oklab,var(--accent),transparent 90%);font-weight:500;color:var(--accent)">
+          IEEE Transactions on Image Processing (TIP)
+        </div>
+      </div>
+    </section>
+
+    <!-- VISITOR ANALYTICS -->
+    <section id="visitor-analytics" style="background:linear-gradient(135deg, var(--card) 0%, color-mix(in oklab, var(--card), var(--brand) 2%) 100%)">
+      <h2>🌍 Visitor Analytics</h2>
+      
+      <!-- Stats Row -->
+      <div style="display:grid;grid-template-columns:auto 1fr;gap:20px;align-items:center;margin-bottom:20px">
+        <div style="display:flex;align-items:center;gap:12px">
+          <div style="font-weight:600;color:var(--brand);font-size:1.1rem">Total Visits:</div>
+          <div id="visitor-count" style="padding:6px 16px;background:var(--gradient-brand);color:white;border-radius:999px;font-size:0.9rem;font-weight:700;box-shadow:var(--shadow)">Loading...</div>
+        </div>
+        <div>
+          <div style="color:var(--muted);margin-bottom:6px;font-weight:500">📍 Recent visitors from:</div>
+          <div id="visitor-locations" style="color:var(--text);font-weight:500">Loading locations...</div>
+          <div id="current-visitor" style="color:var(--muted);font-size:0.85rem;margin-top:8px;opacity:0.8">
+            Your location: <span id="user-location" style="color:var(--brand);font-weight:600">Detecting...</span>
+          </div>
+        </div>
+      </div>
+      
+      <!-- World Map -->
+      <div style="background:color-mix(in oklab,var(--card),transparent 6%);border:1px solid var(--border);border-radius:var(--radius-md);padding:20px;position:relative;overflow:hidden">
+        <div style="color:var(--muted);margin-bottom:12px;font-weight:500;text-align:center">🗺️ Visitor Locations Map</div>
+        <div id="world-map" style="width:100%;height:300px;background:color-mix(in oklab,var(--bg),transparent 20%);border-radius:var(--radius-sm);position:relative;overflow:hidden;display:flex;align-items:center;justify-content:center">
+          <!-- Simple World Map SVG -->
+          <svg viewBox="0 0 1000 500" style="width:100%;height:100%;opacity:0.6">
+            <!-- Simplified world map paths -->
+            <g fill="var(--border)" stroke="var(--border)" stroke-width="0.5">
+              <!-- North America -->
+              <path d="M150,100 L300,80 L350,120 L320,180 L280,200 L200,220 L150,180 Z"/>
+              <!-- South America -->
+              <path d="M250,250 L320,240 L340,300 L300,380 L260,360 L240,320 Z"/>
+              <!-- Europe -->
+              <path d="M450,80 L520,70 L540,100 L520,130 L480,140 L450,120 Z"/>
+              <!-- Africa -->
+              <path d="M480,150 L540,140 L580,200 L560,300 L520,320 L480,280 L470,200 Z"/>
+              <!-- Asia -->
+              <path d="M550,60 L750,50 L800,100 L780,180 L720,200 L650,180 L580,120 L550,80 Z"/>
+              <!-- Australia -->
+              <path d="M700,280 L780,270 L800,300 L780,320 L720,310 Z"/>
+            </g>
+          </svg>
+          
+          <!-- Visitor Markers -->
+          <div id="visitor-markers" style="position:absolute;top:0;left:0;width:100%;height:100%;pointer-events:none">
+            <!-- Dynamic markers will be added here -->
+          </div>
+          
+          <!-- Loading indicator -->
+          <div id="map-loading" style="position:absolute;color:var(--muted);font-size:0.9rem">
+            🌐 Loading visitor data...
+          </div>
+        </div>
+        
+        <!-- Location Legend -->
+        <div style="margin-top:12px;display:flex;gap:16px;justify-content:center;flex-wrap:wrap;font-size:0.8rem">
+          <div style="display:flex;align-items:center;gap:4px;color:var(--muted)">
+            <div style="width:8px;height:8px;background:var(--brand);border-radius:50%;box-shadow:0 0 8px var(--brand)"></div>
+            Current visitor
+          </div>
+          <div style="display:flex;align-items:center;gap:4px;color:var(--muted)">
+            <div style="width:8px;height:8px;background:var(--accent);border-radius:50%;box-shadow:0 0 8px var(--accent)"></div>
+            Recent visitors
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Image Modal -->
+  <div id="imageModal" class="image-modal">
+    <div class="modal-content">
+      <img id="modalImage" class="modal-image" src="" alt="">
+      <button class="modal-close" onclick="closeImageModal()">×</button>
+      <div id="modalCaption" class="modal-caption"></div>
+    </div>
+  </div>
+
+  <footer>
+    © <span id="year"></span> Hao Zhang. Single‑page site with media‑left cards. Replace placeholders under <code>/assets/img/</code>.
+  </footer>
+
+  <script>
+    (function(){
+      const html = document.documentElement; 
+      const btn = document.getElementById('themeBtn'); 
+      
+      // Auto theme switching based on time
+      function getAutoTheme() {
+        const hour = new Date().getHours();
+        return (hour >= 6 && hour < 18) ? 'light' : 'dark'; // 6AM-6PM = light, 6PM-6AM = dark
+      }
+      
+      function initTheme() {
+        const saved = localStorage.getItem('hz-theme');
+        const autoMode = localStorage.getItem('hz-auto-theme') !== 'false'; // Default to auto
+        
+        if (saved === 'manual') {
+          // User has manually set theme, keep it
+          const manualTheme = localStorage.getItem('hz-manual-theme') || 'dark';
+          html.setAttribute('data-theme', manualTheme);
+        } else if (autoMode) {
+          // Auto theme based on time
+          const autoTheme = getAutoTheme();
+          html.setAttribute('data-theme', autoTheme);
+          localStorage.setItem('hz-current-theme', autoTheme);
+        } else {
+          // Default to dark if no preference
+          html.setAttribute('data-theme', 'dark');
+        }
+        
+        updateThemeButton();
+      }
+      
+      function updateThemeButton() {
+        const current = html.getAttribute('data-theme');
+        const isAuto = localStorage.getItem('hz-theme') !== 'manual';
+        btn.textContent = isAuto ? '🌓' : (current === 'dark' ? '☀️' : '🌙');
+        btn.title = isAuto ? 'Auto mode (click to switch to manual)' : `${current === 'dark' ? 'Switch to light' : 'Switch to dark'} mode`;
+      }
+      
+      // Theme settings panel toggle
+      const themeSettings = document.getElementById('themeSettings');
+      btn.addEventListener('click', (e) => {
+        e.stopPropagation();
+        themeSettings.classList.toggle('active');
+        updateTimeInfo();
+      });
+      
+      // Close settings when clicking outside
+      document.addEventListener('click', (e) => {
+        if (!btn.contains(e.target) && !themeSettings.contains(e.target)) {
+          themeSettings.classList.remove('active');
+        }
+      });
+      
+      // Theme option clicks
+      document.querySelectorAll('.theme-option').forEach(option => {
+        option.addEventListener('click', () => {
+          const themeMode = option.dataset.theme;
+          
+          if (themeMode === 'auto') {
+            localStorage.removeItem('hz-theme');
+            localStorage.removeItem('hz-manual-theme');
+            const autoTheme = getAutoTheme();
+            html.setAttribute('data-theme', autoTheme);
+          } else {
+            localStorage.setItem('hz-theme', 'manual');
+            localStorage.setItem('hz-manual-theme', themeMode);
+            html.setAttribute('data-theme', themeMode);
+          }
+          
+          updateThemeButton();
+          updateThemeOptions();
+          themeSettings.classList.remove('active');
+        });
+      });
+      
+      function updateThemeOptions() {
+        const isAuto = localStorage.getItem('hz-theme') !== 'manual';
+        const currentTheme = html.getAttribute('data-theme');
+        
+        document.getElementById('auto-status').textContent = isAuto ? '✅' : '';
+        document.getElementById('light-status').textContent = (!isAuto && currentTheme === 'light') ? '✅' : '';
+        document.getElementById('dark-status').textContent = (!isAuto && currentTheme === 'dark') ? '✅' : '';
+        
+        document.querySelectorAll('.theme-option').forEach(option => {
+          option.classList.remove('active');
+          if ((isAuto && option.dataset.theme === 'auto') || 
+              (!isAuto && option.dataset.theme === currentTheme)) {
+            option.classList.add('active');
+          }
+        });
+      }
+      
+      function updateTimeInfo() {
+        const now = new Date();
+        const hour = now.getHours();
+        const currentTime = now.toLocaleTimeString('en-US', {hour: '2-digit', minute: '2-digit'});
+        
+        let nextSwitchHour, nextSwitchType;
+        if (hour >= 6 && hour < 18) {
+          // Currently day time, next switch is to night at 6PM
+          nextSwitchHour = 18;
+          nextSwitchType = 'night';
+        } else {
+          // Currently night time, next switch is to day at 6AM
+          nextSwitchHour = hour < 6 ? 6 : 30; // 6AM today or 6AM tomorrow
+          nextSwitchType = 'day';
+        }
+        
+        const nextSwitch = nextSwitchHour === 30 ? '6:00 AM tomorrow' : 
+                          (nextSwitchHour === 6 ? '6:00 AM' : '6:00 PM');
+        
+        document.getElementById('current-time').textContent = currentTime;
+        document.getElementById('next-switch').textContent = `${nextSwitch} (${nextSwitchType} mode)`;
+      }
+      
+      // Auto theme update every hour
+      setInterval(() => {
+        const isAuto = localStorage.getItem('hz-theme') !== 'manual';
+        if (isAuto) {
+          const autoTheme = getAutoTheme();
+          const currentTheme = html.getAttribute('data-theme');
+          if (autoTheme !== currentTheme) {
+            html.setAttribute('data-theme', autoTheme);
+            localStorage.setItem('hz-current-theme', autoTheme);
+            updateThemeButton();
+          }
+        }
+      }, 60 * 60 * 1000); // Check every hour
+      
+      // Initialize theme
+      initTheme();
+      updateThemeOptions();
+      updateTimeInfo();
+      document.getElementById('year').textContent = new Date().getFullYear();
+      
+      // News expand/collapse functionality
+      const showMoreBtn = document.getElementById('show-more-btn');
+      const hiddenNews = document.querySelectorAll('.hidden-news');
+      let isExpanded = false;
+      
+      showMoreBtn.addEventListener('click', () => {
+        isExpanded = !isExpanded;
+        hiddenNews.forEach((item, index) => {
+          if (isExpanded) {
+            setTimeout(() => {
+              item.style.display = 'block';
+              setTimeout(() => {
+                item.style.opacity = '1';
+                item.style.transform = 'translateY(0)';
+              }, 50);
+            }, index * 100);
+          } else {
+            item.style.opacity = '0';
+            item.style.transform = 'translateY(-20px)';
+            setTimeout(() => {
+              item.style.display = 'none';
+            }, 200);
+          }
+        });
+        
+        showMoreBtn.textContent = isExpanded ? 'Show Less News' : 'Show More News';
+        showMoreBtn.style.background = isExpanded ? 'var(--gradient-accent)' : 'var(--gradient-brand)';
+      });
+      
+      // Experience expand/collapse functionality
+      const showMoreExperienceBtn = document.getElementById('show-more-experience-btn');
+      const hiddenExperience = document.querySelectorAll('.hidden-experience');
+      let isExperienceExpanded = false;
+      
+      showMoreExperienceBtn.addEventListener('click', () => {
+        isExperienceExpanded = !isExperienceExpanded;
+        hiddenExperience.forEach((item, index) => {
+          if (isExperienceExpanded) {
+            setTimeout(() => {
+              item.style.display = 'block';
+              setTimeout(() => {
+                item.style.opacity = '1';
+                item.style.transform = 'translateY(0)';
+              }, 50);
+            }, index * 100);
+          } else {
+            item.style.opacity = '0';
+            item.style.transform = 'translateY(-20px)';
+            setTimeout(() => {
+              item.style.display = 'none';
+            }, 200);
+          }
+        });
+        
+        showMoreExperienceBtn.textContent = isExperienceExpanded ? 'Show Less Experience' : 'Show More Experience';
+        showMoreExperienceBtn.style.background = isExperienceExpanded ? 'var(--gradient-accent)' : 'var(--gradient-brand)';
+      });
+      
+      // Initialize hidden news items with transition styles
+      hiddenNews.forEach(item => {
+        item.style.opacity = '0';
+        item.style.transform = 'translateY(-20px)';
+        item.style.transition = 'all 0.3s ease';
+      });
+      
+      // Initialize hidden experience items with transition styles
+      hiddenExperience.forEach(item => {
+        item.style.opacity = '0';
+        item.style.transform = 'translateY(-20px)';
+        item.style.transition = 'all 0.3s ease';
+      });
+      
+      // Function to update stats (can be called manually or automated)
+      function updateStats() {
+        // Google Scholar stats (updated from recent data)
+        const scholarStats = {
+          citations: 73,
+          hIndex: 5,
+          i10Index: 3,
+          lastUpdated: new Date().toISOString().split('T')[0]
+        };
+        
+        // Update Google Scholar link and stats  
+        document.getElementById('scholar-citations').textContent = `(${scholarStats.citations} citations, h-index: ${scholarStats.hIndex})`;
+        
+        // Xiaohongshu stats (updated from profile data)
+        const xhsStats = {
+          followers: '1K+',
+          likes: '1K+',
+          lastUpdated: new Date().toISOString().split('T')[0]
+        };
+        
+        document.getElementById('xhs-followers').textContent = `(${xhsStats.followers} followers)`;
+        
+        // Add loading animation effect for pills
+        document.querySelectorAll('.pill').forEach(pill => {
+          if (pill.querySelector('span')) {
+            pill.style.transform = 'scale(1.02)';
+            setTimeout(() => {
+              pill.style.transform = 'scale(1)';
+            }, 200);
+          }
+        });
+        
+        console.log('📊 Stats updated:', scholarStats.lastUpdated);
+      }
+      
+      // Try to fetch real Google Scholar data (fallback to manual data)
+      async function fetchScholarStats() {
+        try {
+          // This would need a backend service to bypass CORS
+          // For now, we'll use the manual data but provide framework for future automation
+          const response = await fetch('/api/scholar-stats?user=KeDuEtcAAAAJ').catch(() => null);
+          if (response && response.ok) {
+            const data = await response.json();
+            document.getElementById('scholar-citations').textContent = `(${data.citations || 73} citations, h-index: ${data.hIndex || 5})`;
+          }
+        } catch (error) {
+          console.log('📊 Using cached Scholar stats');
+        }
+      }
+      
+      // Update stats on page load
+      updateStats();
+      fetchScholarStats();
+      
+      // Optional: Update stats periodically (every 24 hours)
+      setInterval(() => {
+        updateStats();
+        fetchScholarStats();
+      }, 24 * 60 * 60 * 1000);
+      
+      // Manual update function for easy maintenance
+      // To update stats manually, run: updateStats() in browser console
+      // Or modify the scholarStats and xhsStats objects above
+      window.updateStats = updateStats;
+      
+      // Visitor Analytics
+      initVisitorAnalytics();
+      
+      function initVisitorAnalytics() {
+        // Get or initialize visitor data
+        let visitorData = JSON.parse(localStorage.getItem('hz-visitors') || '{"count": 0, "locations": [], "lastVisit": null}');
+        
+        // Increment visitor count
+        visitorData.count++;
+        
+        // Update visitor count display
+        document.getElementById('visitor-count').textContent = `${visitorData.count} visits`;
+        
+        // Try to get user's location
+        getCurrentLocation().then(location => {
+          if (location) {
+            // Add current visit location
+            const now = new Date();
+            const visitRecord = {
+              location: location,
+              timestamp: now.toISOString(),
+              date: now.toLocaleDateString()
+            };
+            
+            // Add to locations (keep last 10)
+            visitorData.locations.unshift(visitRecord);
+            visitorData.locations = visitorData.locations.slice(0, 10);
+            visitorData.lastVisit = now.toISOString();
+            
+            // Update display
+            updateVisitorDisplay(visitorData);
+            
+            // Save to localStorage
+            localStorage.setItem('hz-visitors', JSON.stringify(visitorData));
+          }
+        });
+        
+        // Display existing data immediately
+        updateVisitorDisplay(visitorData);
+      }
+      
+      async function getCurrentLocation() {
+        try {
+          // Try geolocation API first
+          if (navigator.geolocation) {
+            return new Promise((resolve) => {
+              navigator.geolocation.getCurrentPosition(
+                async (position) => {
+                  const { latitude, longitude } = position.coords;
+                  try {
+                    // Use a free geocoding service
+                    const response = await fetch(`https://api.bigdatacloud.net/data/reverse-geocode-client?latitude=${latitude}&longitude=${longitude}&localityLanguage=en`);
+                    const data = await response.json();
+                    const location = `${data.city || data.locality || 'Unknown'}, ${data.countryName || data.country || 'Unknown'}`;
+                    resolve(cleanLocationName(location));
+                  } catch {
+                    resolve(`${latitude.toFixed(2)}, ${longitude.toFixed(2)}`);
+                  }
+                },
+                async () => {
+                  // Fallback to IP-based location
+                  try {
+                    const response = await fetch('https://ipapi.co/json/');
+                    const data = await response.json();
+                    const location = `${data.city || 'Unknown'}, ${data.country_name || 'Unknown'}`;
+                    resolve(cleanLocationName(location));
+                  } catch {
+                    resolve('Unknown Location');
+                  }
+                },
+                { timeout: 10000, enableHighAccuracy: false }
+              );
+            });
+          } else {
+            // Fallback to IP-based location
+            const response = await fetch('https://ipapi.co/json/');
+            const data = await response.json();
+            const location = `${data.city || 'Unknown'}, ${data.country_name || 'Unknown'}`;
+            return cleanLocationName(location);
+          }
+        } catch (error) {
+          console.log('Location detection failed:', error);
+          return 'Unknown Location';
+        }
+      }
+      
+      function cleanLocationName(location) {
+        // Clean up formal country name suffixes and prefixes
+        return location
+          .replace(/\s*\(the\)/gi, '') // Remove "(the)"
+          .replace(/\s*\(.*?\)/g, '') // Remove any other parentheses content
+          .replace(/^the\s+/gi, '') // Remove "the" prefix
+          .replace(/United States of America/gi, 'United States') // Simplify USA
+          .replace(/People's Republic of China/gi, 'China') // Simplify China
+          .replace(/Russian Federation/gi, 'Russia') // Simplify Russia
+          .replace(/United Kingdom of Great Britain and Northern Ireland/gi, 'United Kingdom') // Simplify UK
+          .trim();
+      }
+      
+      function updateVisitorDisplay(visitorData) {
+        // Update current user location
+        getCurrentLocation().then(location => {
+          document.getElementById('user-location').textContent = location || 'Unknown';
+          updateMapMarkers(visitorData, location);
+        });
+        
+        // Update recent visitor locations
+        if (visitorData.locations && visitorData.locations.length > 0) {
+          const recentLocations = visitorData.locations
+            .slice(0, 5)
+            .map(v => v.location)
+            .filter((location, index, self) => self.indexOf(location) === index) // Remove duplicates
+            .join(', ');
+          document.getElementById('visitor-locations').textContent = recentLocations || 'No recent data';
+        } else {
+          document.getElementById('visitor-locations').textContent = 'No recent data';
+        }
+        
+        // Hide loading indicator
+        setTimeout(() => {
+          const loading = document.getElementById('map-loading');
+          if (loading) loading.style.display = 'none';
+        }, 2000);
+      }
+      
+      function updateMapMarkers(visitorData, currentLocation) {
+        const markersContainer = document.getElementById('visitor-markers');
+        markersContainer.innerHTML = '';
+        
+        // Approximate coordinates for major regions (for demo purposes)
+        const locationCoords = {
+          'United States': { x: 25, y: 35 },
+          'China': { x: 70, y: 30 },
+          'Europe': { x: 50, y: 25 },
+          'Canada': { x: 20, y: 25 },
+          'Japan': { x: 80, y: 35 },
+          'Korea': { x: 78, y: 32 },
+          'Singapore': { x: 75, y: 55 },
+          'Australia': { x: 85, y: 75 },
+          'India': { x: 65, y: 45 },
+          'UK': { x: 48, y: 22 },
+          'Germany': { x: 52, y: 25 },
+          'France': { x: 50, y: 28 }
+        };
+        
+        // Add markers for recent visitors
+        if (visitorData.locations && visitorData.locations.length > 0) {
+          const uniqueLocations = visitorData.locations
+            .map(v => v.location)
+            .filter((location, index, self) => self.indexOf(location) === index)
+            .slice(0, 8); // Show max 8 locations
+            
+          uniqueLocations.forEach((location, index) => {
+            // Try to match location to coordinates
+            let coords = null;
+            for (const [region, regionCoords] of Object.entries(locationCoords)) {
+              if (location.toLowerCase().includes(region.toLowerCase()) || 
+                  region.toLowerCase().includes(location.split(',')[1]?.trim().toLowerCase() || '')) {
+                coords = regionCoords;
+                break;
+              }
+            }
+            
+            if (coords) {
+              const marker = document.createElement('div');
+              const isCurrentLocation = location === currentLocation;
+              
+              marker.style.cssText = `
+                position: absolute;
+                left: ${coords.x}%;
+                top: ${coords.y}%;
+                width: ${isCurrentLocation ? '12px' : '8px'};
+                height: ${isCurrentLocation ? '12px' : '8px'};
+                background: ${isCurrentLocation ? 'var(--brand)' : 'var(--accent)'};
+                border-radius: 50%;
+                box-shadow: 0 0 ${isCurrentLocation ? '12px' : '8px'} ${isCurrentLocation ? 'var(--brand)' : 'var(--accent)'};
+                animation: pulse 2s infinite;
+                animation-delay: ${index * 0.3}s;
+                z-index: ${isCurrentLocation ? '10' : '5'};
+                cursor: pointer;
+                title: ${location};
+              `;
+              
+              markersContainer.appendChild(marker);
+            }
+          });
+        }
+        
+        // Add pulse animation
+        if (!document.getElementById('pulse-style')) {
+          const style = document.createElement('style');
+          style.id = 'pulse-style';
+          style.textContent = `
+            @keyframes pulse {
+              0%, 100% { transform: scale(1); opacity: 1; }
+              50% { transform: scale(1.2); opacity: 0.7; }
+            }
+          `;
+          document.head.appendChild(style);
+        }
+      }
+      
+      // Reset visitor data (for testing) - uncomment if needed
+      // localStorage.removeItem('hz-visitors');
+      
+      // Pet Age Calculator
+      function updatePetAges() {
+        const now = new Date();
+        
+        // Fifi's birthday: August 14, 2022
+        const fifiBirthday = new Date(2022, 7, 14); // Month is 0-indexed
+        const fifiAge = calculateAge(fifiBirthday, now);
+        document.getElementById('fifi-age').textContent = formatAge(fifiAge);
+        
+        // Taotao's birthday: February 14, 2025
+        const taotaoBirthday = new Date(2025, 1, 14); // Month is 0-indexed
+        const taotaoAge = calculateAge(taotaoBirthday, now);
+        document.getElementById('taotao-age').textContent = formatAge(taotaoAge);
+      }
+      
+      function calculateAge(birthDate, currentDate) {
+        const diffMs = currentDate - birthDate;
+        const ageDate = new Date(diffMs);
+        
+        const years = ageDate.getUTCFullYear() - 1970;
+        const months = ageDate.getUTCMonth();
+        const days = ageDate.getUTCDate() - 1;
+        
+        return { years, months, days, totalDays: Math.floor(diffMs / (1000 * 60 * 60 * 24)) };
+      }
+      
+      function formatAge(age) {
+        if (age.totalDays < 0) {
+          return `${Math.abs(age.totalDays)} days to go! 🎂`;
+        } else if (age.years > 0) {
+          if (age.months > 0) {
+            return `${age.years} year${age.years > 1 ? 's' : ''} ${age.months} month${age.months > 1 ? 's' : ''}`;
+          } else {
+            return `${age.years} year${age.years > 1 ? 's' : ''}`;
+          }
+        } else if (age.months > 0) {
+          return `${age.months} month${age.months > 1 ? 's' : ''}`;
+        } else {
+          return `${age.totalDays} day${age.totalDays > 1 ? 's' : ''}`;
+        }
+      }
+      
+      // Update pet ages on load and every hour
+      updatePetAges();
+      setInterval(updatePetAges, 60 * 60 * 1000);
+      
+      // Image Modal Functionality
+      function initImageModal() {
+        const clickableImages = document.querySelectorAll('.clickable-image');
+        const modal = document.getElementById('imageModal');
+        const modalImage = document.getElementById('modalImage');
+        const modalCaption = document.getElementById('modalCaption');
+        
+        clickableImages.forEach(img => {
+          img.addEventListener('click', function(e) {
+            e.preventDefault();
+            e.stopPropagation();
+            
+            modalImage.src = this.src;
+            modalImage.alt = this.alt;
+            modalCaption.textContent = this.alt;
+            
+            modal.classList.add('active');
+            document.body.style.overflow = 'hidden';
+            
+            // Add animation to modal content
+            const modalContent = modal.querySelector('.modal-content');
+            modalContent.style.animation = 'zoomIn 0.3s ease';
+          });
+        });
+        
+        // Close modal when clicking outside or pressing ESC
+        modal.addEventListener('click', function(e) {
+          if (e.target === modal) {
+            closeImageModal();
+          }
+        });
+        
+        document.addEventListener('keydown', function(e) {
+          if (e.key === 'Escape' && modal.classList.contains('active')) {
+            closeImageModal();
+          }
+        });
+      }
+      
+      // Initialize image modal
+      initImageModal();
+    })();
+    
+    // Global function for modal close button
+    function closeImageModal() {
+      const modal = document.getElementById('imageModal');
+      modal.classList.remove('active');
+      document.body.style.overflow = '';
+    }
+  </script>
+</body>
+</html>
