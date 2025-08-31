@@ -2,7 +2,7 @@
 <html lang="en" data-theme="system">
 <head>
   <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=5, user-scalable=yes" />
   <title>Hao Zhang 张昊 — Homepage</title>
   <meta name="description" content="Hao Zhang (张昊) — PhD student @ UIUC. Research: 3D/4D Reconstruction & Generation, Animation & Rigging, Physical Simulation." />
   <!-- Open Graph / Twitter -->
@@ -154,12 +154,96 @@
 
     /* Two-column grid for Experience & Education */
     .grid-2{display:grid;grid-template-columns:1fr 1fr;gap:24px}
-    @media (max-width:900px){.hero{grid-template-columns:1fr;text-align:center}.grid-2{grid-template-columns:1fr}
-      .publication-card{grid-template-columns:1fr;text-align:center}.paper-thumb{height:160px}
-      #pets > div:first-of-type{grid-template-columns:1fr;text-align:center}
-      #pets .thumb{width:220px;height:220px;margin:0 auto}
-      .exp-header, .edu-header{flex-direction:column;text-align:center;gap:12px}
-      .exp-badge, .edu-badge{margin:0}}
+    
+    /* Mobile-first responsive design */
+    @media (max-width: 768px) {
+      .container{padding:16px}
+      .topbar__inner{padding:12px 16px}
+      
+      /* Hero section mobile optimization */
+      .hero{grid-template-columns:1fr;text-align:center;padding:24px;gap:24px;margin-top:16px}
+      .hero h1{font-size:2rem}
+      .hero .portrait{width:150px;height:150px;margin:0 auto}
+      .subtitle{font-size:1rem}
+      .links{justify-content:center}
+      
+      /* Navigation improvements */
+      nav{flex-wrap:wrap;gap:4px}
+      nav a{padding:6px 12px;font-size:14px;margin:2px}
+      .brand__name{font-size:1rem}
+      .brand__avatar{width:32px;height:32px}
+      
+      /* Two-column to single column */
+      .grid-2{grid-template-columns:1fr;gap:16px}
+      
+      /* Publication cards mobile optimization */
+      .publication-card{grid-template-columns:1fr;text-align:center;gap:16px;padding:16px}
+      .paper-thumb{height:140px;width:100%;max-width:280px}
+      .paper-thumb-wrap{padding:16px}
+      .paper-badge{position:static;margin:8px auto 0;display:inline-block}
+      
+      /* Experience & Education mobile optimization */
+      .exp-header, .edu-header{flex-direction:column;text-align:center;gap:8px}
+      .exp-badge, .edu-badge{margin:0;align-self:center}
+      .exp-logo, .edu-logo{width:40px;height:40px}
+      
+      /* Pets section mobile optimization */
+      #pets > div:first-of-type{grid-template-columns:1fr;text-align:center;gap:20px}
+      #pets .thumb{width:200px;height:200px;margin:0 auto}
+      
+      /* Visitor analytics mobile optimization */
+      .visitor-stats{grid-template-columns:1fr !important;gap:12px;text-align:center}
+      #world-map{height:250px}
+      
+      /* Pets section mobile optimization improved */
+      .pets-container{grid-template-columns:1fr !important;text-align:center;gap:20px !important;padding:16px !important}
+      
+      /* General mobile improvements */
+      section{padding:20px;margin-top:16px}
+      .theme-settings{right:0;left:auto;min-width:180px}
+      .pill{padding:6px 12px;font-size:14px}
+      
+      /* Text size adjustments */
+      h2{font-size:1.5rem}
+      .title{font-size:1rem}
+      .meta{font-size:13px}
+      
+      /* Better touch targets */
+      button, .pill, nav a, .theme-toggle{min-height:44px;min-width:44px}
+      
+      /* Footer mobile optimization */
+      footer{padding:32px 16px 60px;font-size:14px}
+      
+      /* News items mobile optimization */
+      .news-item{padding:12px 16px !important;margin-bottom:8px !important}
+      .news-item > div[style*="position:absolute"]{position:static !important;margin-bottom:8px !important;
+        display:inline-block;font-size:11px !important}
+      
+      /* Image modal mobile optimization */
+      .modal-content{max-width:95vw;max-height:95vh;margin:16px}
+      .modal-close{width:36px;height:36px;font-size:18px}
+      
+      /* Better readability */
+      body{font-size:15px;line-height:1.6}
+      .brand__name .muted{display:none} /* Hide Chinese name on mobile for space */
+      
+      /* Theme settings mobile optimization */
+      .theme-settings{min-width:160px;font-size:14px}
+      .theme-option{padding:6px 0}
+    }
+    
+    /* Tablet responsive design */
+    @media (max-width: 1024px) and (min-width: 769px) {
+      .container{padding:24px}
+      .hero{padding:32px;gap:28px}
+      .publication-card{gap:20px}
+      #pets > div:first-of-type{gap:24px}
+    }
+    
+    /* Large mobile / small tablet */
+    @media (max-width: 900px) and (min-width: 769px) {
+      .grid-2{grid-template-columns:1fr}
+    }
 
     footer{color:var(--muted);text-align:center;padding:48px 12px 80px;position:relative}
     footer::before{content:'';position:absolute;top:0;left:50%;transform:translateX(-50%);width:100px;height:1px;
@@ -193,6 +277,28 @@
     
     /* Scroll behavior */
     html{scroll-behavior:smooth}
+    
+    /* Mobile performance optimizations */
+    @media (max-width: 768px) {
+      /* Reduce animations on mobile for better performance */
+      .hero, section{animation:none;opacity:1}
+      
+      /* Optimize scrolling */
+      body{-webkit-overflow-scrolling:touch}
+      
+      /* Better link styling for mobile */
+      a{-webkit-tap-highlight-color:rgba(96,165,250,0.3)}
+      
+      /* Navigation mobile improvements */
+      .topbar{position:fixed;backdrop-filter:blur(12px)}
+      body{padding-top:70px} /* Account for fixed header */
+      
+      /* Improve button visibility and touch */
+      #show-more-btn, #show-more-experience-btn{font-size:14px;padding:12px 20px;border-radius:24px}
+      
+      /* Better text contrast on mobile */
+      .meta{color:color-mix(in oklab,var(--muted),var(--text) 20%)}
+    }
     
     /* Enhanced visual effects */
     .hero, section{animation:fadeInUp 0.6s ease forwards;opacity:0}
@@ -512,7 +618,7 @@
     <!-- PETS -->
     <section id="pets" style="background:linear-gradient(135deg, var(--card) 0%, color-mix(in oklab, var(--card), var(--accent) 3%) 100%)">
       <h2>🐶 My Beloved Companions</h2>
-      <div style="display:grid;grid-template-columns:280px 1fr;gap:28px;align-items:start;background:color-mix(in oklab,var(--card),transparent 6%);
+      <div class="pets-container" style="display:grid;grid-template-columns:280px 1fr;gap:28px;align-items:start;background:color-mix(in oklab,var(--card),transparent 6%);
         border:1px solid var(--border);border-radius:var(--radius-lg);padding:24px;position:relative;overflow:hidden">
         <div style="position:absolute;top:0;left:0;right:0;height:2px;background:var(--gradient-accent);opacity:0.4"></div>
         
@@ -580,7 +686,7 @@
       <h2>🌍 Visitor Analytics</h2>
       
       <!-- Stats Row -->
-      <div style="display:grid;grid-template-columns:auto 1fr;gap:20px;align-items:center;margin-bottom:20px">
+      <div class="visitor-stats" style="display:grid;grid-template-columns:auto 1fr;gap:20px;align-items:center;margin-bottom:20px">
         <div style="display:flex;align-items:center;gap:12px">
           <div style="font-weight:600;color:var(--brand);font-size:1.1rem">Total Visits:</div>
           <div id="visitor-count" style="padding:6px 16px;background:var(--gradient-brand);color:white;border-radius:999px;font-size:0.9rem;font-weight:700;box-shadow:var(--shadow)">Loading...</div>
