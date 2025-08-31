@@ -137,6 +137,9 @@
     .links a{margin-right:12px;font-weight:600;padding:6px 16px;border-radius:999px;background:var(--gradient-brand);
       color:white;transition:all 0.2s ease;text-decoration:none;font-size:13px}
     .links a:hover{background:var(--gradient-accent);transform:translateY(-2px);box-shadow:var(--shadow)}
+    
+    /* GitHub star counter styling */
+    .links a span[id*="-stars"]{transition:all 0.2s ease;display:inline-block}
 
     /* Publications specific styling */
     .publication-card{display:grid;grid-template-columns:320px 1fr;gap:28px;border:1px solid var(--border);border-radius:var(--radius-lg);
@@ -468,7 +471,10 @@
             <div class="title">PhysRig: Differentiable Physics‑Based Skinning and Rigging Framework for Realistic Articulated Object Modeling</div>
             <div class="meta"><strong>Hao Zhang*</strong>, Haolan Xu*, Chun Feng, Varun Jampani, Narendra Ahuja</div>
             <div class="meta"><em>International Conference on Computer Vision (ICCV), 2025</em></div>
-            <div class="links"><a href="https://physrig.github.io" target="_blank">🌐 Project Page</a></div>
+            <div class="links">
+              <a href="https://physrig.github.io" target="_blank">🌐 Project Page</a>
+              <a href="https://github.com/haoz19/PhysRig" target="_blank">💻 GitHub <span id="physrig-stars" style="opacity:0.8;font-weight:400">(⭐ Loading...)</span></a>
+            </div>
           </div>
         </div>
         <div class="publication-card">
@@ -477,7 +483,10 @@
             <div class="title">MagicPose4D: Crafting Articulated Models with Appearance and Motion Control</div>
             <div class="meta"><strong>Hao Zhang*</strong>, Di Chang*, Fang Li, Mohammad Soleymani, Narendra Ahuja</div>
             <div class="meta"><em>Transactions on Machine Learning Research (TMLR), 2025</em></div>
-            <div class="links"><a href="https://boese0601.github.io/magicpose4d/" target="_blank">🌐 Project Page</a></div>
+            <div class="links">
+              <a href="https://boese0601.github.io/magicpose4d/" target="_blank">🌐 Project Page</a>
+              <a href="https://github.com/haoz19/MagicPose4D" target="_blank">💻 GitHub <span id="magicpose4d-stars" style="opacity:0.8;font-weight:400">(⭐ Loading...)</span></a>
+            </div>
           </div>
         </div>
         <div class="publication-card">
@@ -1038,6 +1047,45 @@
       // To update stats manually, run: updateStats() in browser console
       // Or modify the scholarStats and xhsStats objects above
       window.updateStats = updateStats;
+      
+      // GitHub Stars Fetcher
+      async function fetchGitHubStars(owner, repo, elementId) {
+        try {
+          const response = await fetch(`https://api.github.com/repos/${owner}/${repo}`);
+          if (response.ok) {
+            const data = await response.json();
+            const stars = data.stargazers_count;
+            const element = document.getElementById(elementId);
+            if (element) {
+              element.textContent = `(⭐ ${stars.toLocaleString()})`;
+              element.style.transform = 'scale(1.05)';
+              setTimeout(() => {
+                element.style.transform = 'scale(1)';
+              }, 200);
+            }
+          } else {
+            console.log(`Failed to fetch stars for ${owner}/${repo}`);
+          }
+        } catch (error) {
+          console.log(`Error fetching GitHub stars for ${owner}/${repo}:`, error);
+          const element = document.getElementById(elementId);
+          if (element) {
+            element.textContent = '(⭐ -)';
+          }
+        }
+      }
+      
+      // Fetch stars for projects
+      function initGitHubStars() {
+        fetchGitHubStars('haoz19', 'PhysRig', 'physrig-stars');
+        fetchGitHubStars('haoz19', 'MagicPose4D', 'magicpose4d-stars');
+      }
+      
+      // Initialize GitHub stars
+      initGitHubStars();
+      
+      // Update GitHub stars every 5 minutes
+      setInterval(initGitHubStars, 5 * 60 * 1000);
       
       // Visitor Analytics
       initVisitorAnalytics();
