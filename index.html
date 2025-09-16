@@ -1810,7 +1810,11 @@
           const locationData = await response.json();
           console.log('Location data received:', locationData);
           
-          const locationKey = `${locationData.city || 'Unknown'}, ${locationData.country_name || 'Unknown'}`;
+          const city = locationData.city || locationData.region || locationData.region_name || 'Unknown City';
+          const country = locationData.country_name || locationData.country || locationData.country_code || 'Unknown Country';
+          const locationKey = `${city}, ${country}`;
+          
+          console.log('Processed location:', { city, country, locationKey });
           
           // Track unique locations
           if (!visitorData.locations[locationKey]) {
@@ -2102,11 +2106,12 @@
           }).addTo(visitorMap);
           
           // Add popup
+          const firstVisitDate = data.firstVisit ? new Date(data.firstVisit).toLocaleDateString() : 'Unknown';
           marker.bindPopup(`
             <div style="text-align: center;">
               <strong>${location}</strong><br>
-              <span style="color: var(--text-muted);">${data.count} visits</span><br>
-              <small>First: ${new Date(data.firstVisit).toLocaleDateString()}</small>
+              <span style="color: var(--text-muted);">${data.count || 0} visits</span><br>
+              <small>First: ${firstVisitDate}</small>
             </div>
           `);
           
