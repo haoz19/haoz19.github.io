@@ -760,6 +760,60 @@
       opacity: 0.8;
     }
 
+    .pub-spotlight {
+      display: inline-block;
+      background: linear-gradient(135deg, #f59e0b, #d97706);
+      color: white;
+      padding: 4px 12px;
+      border-radius: 2px;
+      font-size: 12px;
+      font-weight: 600;
+      font-family: var(--mono);
+      margin-left: 8px;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+      position: relative;
+      box-shadow: 0 2px 4px rgba(245, 158, 11, 0.3);
+    }
+
+    .pub-spotlight::before {
+      content: "⭐";
+      margin-right: 4px;
+      font-size: 10px;
+    }
+
+    .pub-spotlight::after {
+      content: "⭐";
+      margin-left: 4px;
+      font-size: 10px;
+    }
+
+    .news-spotlight {
+      display: inline-block;
+      background: linear-gradient(135deg, #f59e0b, #d97706);
+      color: white;
+      padding: 2px 8px;
+      border-radius: 12px;
+      font-size: 11px;
+      font-weight: 600;
+      margin-left: 6px;
+      text-transform: uppercase;
+      letter-spacing: 0.3px;
+      box-shadow: 0 2px 4px rgba(245, 158, 11, 0.3);
+    }
+
+    .news-spotlight::before {
+      content: "⭐";
+      margin-right: 3px;
+      font-size: 9px;
+    }
+
+    .news-spotlight::after {
+      content: "⭐";
+      margin-left: 3px;
+      font-size: 9px;
+    }
+
     .pub-links {
       display: flex;
       gap: 12px;
@@ -1393,6 +1447,12 @@
       <h2 class="section-title">Latest News</h2>
       <div class="news-timeline" id="news-timeline">
         <div class="news-item">
+          <div class="news-date">2025-09-18</div>
+          <div class="news-content">
+            🎉 <strong>SP4D</strong> (first author) accepted by <strong>NeurIPS 2025</strong><span class="news-spotlight">Spotlight</span>!
+          </div>
+        </div>
+        <div class="news-item">
           <div class="news-date">2025-06-25</div>
           <div class="news-content">
             <strong>PhysRig</strong> (first author) accepted by <strong>ICCV 2025</strong>!
@@ -1466,7 +1526,10 @@
           <div class="pub-content">
             <div class="pub-title">Stable Part Diffusion 4D: Multi-View RGB and Kinematic Parts Video Generation</div>
             <div class="pub-authors"><strong>Hao Zhang</strong>, Chun-Han Yao, Simon Donné, Narendra Ahuja, Varun Jampani</div>
-            <div class="pub-venue">arXiv 2025</div>
+            <div style="margin-bottom: 16px;">
+              <span class="pub-venue">NeurIPS 2025</span>
+              <span class="pub-spotlight">Spotlight</span>
+            </div>
             <div class="pub-links">
               <a href="https://stablepartdiffusion4d.github.io/" target="_blank" class="pub-link">Project</a>
               <a href="https://arxiv.org/abs/2509.10687" target="_blank" class="pub-link">Paper</a>
