@@ -4,10 +4,8 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=5, user-scalable=yes" />
   <title>Hao Zhang 张昊 — Homepage</title>
-  <meta name="description" content="Hao Zhang (张昊) — PhD student @ UIUC. Research: 3D/4D Reconstruction & Generation, Animation & Rigging, Physical Simulation." />
-  <!-- Open Graph / Twitter -->
-  <meta property="og:title" content="Hao Zhang — Homepage" />
-  <meta property="og:description" content="PhD student @ UIUC. 3D/4D Reconstruction & Generation, Animation & Rigging, Physical Simulation." />
+  <meta name="description" content="Hao Zhang (张昊) — PhD student @ UIUC. Research: 3D/4D Reconstruction & Generation, Animation & Rigging, Physical Simulation, World Models." />
+  <meta property="og:description" content="PhD student @ UIUC. World Models, 3D/4D Reconstruction & Generation, Animation & Rigging, Physical Simulation." />
   <meta property="og:type" content="website" />
   <meta property="og:url" content="https://haoz19.github.io" />
   <meta property="og:image" content="https://unavatar.io/github/haoz19" />
@@ -297,6 +295,14 @@
       animation-delay: 4s;
     }
 
+    .keyword-6 {
+      color: #0ea5e9 !important; /* Green */
+      animation: keywordFlow 10s ease-in-out infinite;
+      animation-delay: 4s;
+    }
+
+    
+
     @keyframes keywordFlow {
       0%, 80%, 100% {
         opacity: 0.7;
@@ -332,6 +338,8 @@
     .keyword-highlight.animation { color: #ec4899; }
     .keyword-highlight.rigging { color: #f59e0b; }
     .keyword-highlight.simulation { color: #10b981; }
+    .keyword-highlight.world { color: #0ea5e9; }
+
 
     .contact-grid {
       display: flex;
@@ -1718,7 +1726,7 @@
       const typewriterElement = document.getElementById('typewriter');
       if (!typewriterElement) return;
       
-      const text = `I work on <span class="keyword-highlight dynamic">Dynamic 3D</span>, <span class="keyword-highlight reconstruction">4D Reconstruction and Generation</span>, <span class="keyword-highlight animation">Animation</span>, <span class="keyword-highlight rigging">Rigging</span>, and <span class="keyword-highlight simulation">Differential Physical Simulation</span> in 3D Vision. Open to research collaborations, academic discussions, and mentoring opportunities.`;
+      const text = `I work on <span class=""keyword-highlight world">World Models</span>, keyword-highlight dynamic">Dynamic 3D</span>, <span class="keyword-highlight reconstruction">4D Reconstruction and Generation</span>, <span class="keyword-highlight animation">Animation</span>, <span class="keyword-highlight rigging">Rigging</span>, and <span class="keyword-highlight simulation">Differential Physical Simulation</span> in 3D Vision. Open to research collaborations, academic discussions, and mentoring opportunities.`;
       
       let index = 0;
       let currentText = '';
