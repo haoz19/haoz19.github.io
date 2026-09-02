@@ -707,6 +707,13 @@
       font-weight: 600;
     }
 
+    .pub-note {
+      font-size: 14px;
+      color: var(--text-light);
+      margin-bottom: 12px;
+      line-height: 1.5;
+    }
+
     .pub-venue {
       display: inline-block;
       background: var(--accent);
@@ -1224,6 +1231,18 @@
       <h2 class="section-title">Latest News</h2>
       <div class="news-timeline" id="news-timeline">
         <div class="news-item">
+          <div class="news-date">2026-09-01</div>
+          <div class="news-content">
+            🎉 World Labs released <strong>Atlas</strong>, a world model for spatial intelligence. I led <strong>Atlas 3D</strong>.
+          </div>
+        </div>
+        <div class="news-item">
+          <div class="news-date">2026-06-12</div>
+          <div class="news-content">
+            🎉 <strong>World Tracing</strong> (first author) is out — paper, project page, code, and live demo are available.
+          </div>
+        </div>
+        <div class="news-item">
           <div class="news-date">2026-02-20</div>
           <div class="news-content">
             🎉 <strong>RigMo</strong> (first author) accepted by <strong>CVPR 2026</strong>, code and data will be release soon!
@@ -1310,6 +1329,40 @@
     <section id="publications" class="section">
       <h2 class="section-title">Selected Publications</h2>
       <div class="pub-list">
+
+        <div class="pub-item">
+          <img class="pub-image" src="assets/img/papers/Atlas.jpg" alt="Atlas"/>
+          <div class="pub-content">
+            <div class="pub-title">Atlas: A World Model for Spatial Intelligence</div>
+            <div class="pub-authors">World Labs Team</div>
+            <div class="pub-note"><strong>Hao Zhang</strong> led Atlas 3D (reconstruction and explicit 3D outputs).</div>
+            <div class="pub-venue">World Labs</div>
+            <div class="pub-links">
+              <a href="https://www.worldlabs.ai/blog/atlas" target="_blank" class="pub-link">Blog</a>
+              <a href="https://x.com/HaoZhang623/status/2094841315783754213" target="_blank" class="pub-link">Thread</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="pub-item">
+          <img class="pub-image" src="assets/img/papers/WorldTracing.jpg" alt="World Tracing"/>
+          <div class="pub-content">
+            <div class="pub-title">World Tracing: Generative Pixel-Aligned Geometry Beyond the Visible</div>
+            <div class="pub-authors">
+              <strong>Hao Zhang</strong><sup>1,2</sup>, Mohamed El Banani<sup>1</sup>, Jen-Hao Cheng<sup>1</sup>, Paul Zhang<sup>1</sup>, Yi Hua<sup>1</sup>, Ben Mildenhall<sup>1</sup>, Christoph Lassner<sup>1</sup>, Narendra Ahuja<sup>2</sup>, Gengshan Yang<sup>1</sup>
+            </div>
+            <div class="pub-note"><sup>1</sup>World Labs &nbsp; <sup>2</sup>University of Illinois Urbana-Champaign</div>
+            <div class="pub-venue">arXiv 2026</div>
+            <div class="pub-links">
+              <a href="https://haoz19.github.io/world-tracing-page/" target="_blank" class="pub-link">Project</a>
+              <a href="https://arxiv.org/abs/2606.13652" target="_blank" class="pub-link">Paper</a>
+              <a href="https://github.com/haoz19/world-tracing" target="_blank" class="pub-link github" data-repo="world-tracing">
+                Code<span class="star-count" id="wt-stars">Loading...</span>
+              </a>
+              <a href="https://huggingface.co/spaces/haoz19/world-tracing-demo" target="_blank" class="pub-link">🤗 Demo</a>
+            </div>
+          </div>
+        </div>
         
         <div class="pub-item">
           <img class="pub-image" src="assets/img/papers/rigmo.gif" alt="RigMo"/>
@@ -1667,6 +1720,7 @@
     async function fetchGitHubStars() {
       try {
         const repos = [
+          { owner: 'haoz19', name: 'world-tracing', elementId: 'wt-stars' },
           { owner: 'haoz19', name: 'PhysRig', elementId: 'physrig-stars' },
           { owner: 'haoz19', name: 'MagicPose4D', elementId: 'magicpose4d-stars' },
           { owner: 'Stability-AI', name: 'generative-models', elementId: 'sp4d-stars' }
@@ -1689,7 +1743,7 @@
         }
       } catch (error) {
         // Handle errors gracefully
-        const elementIds = ['physrig-stars', 'magicpose4d-stars', 'sp4d-stars'];
+        const elementIds = ['wt-stars', 'physrig-stars', 'magicpose4d-stars', 'sp4d-stars'];
         elementIds.forEach(id => {
           const element = document.getElementById(id);
           if (element) {
