@@ -251,7 +251,8 @@
       box-shadow: 0 8px 26px -14px rgba(22, 24, 29, 0.28);
     }
 
-    .feat img { width: 100%; aspect-ratio: 1399 / 734; object-fit: cover; }
+    .feat > a { display: block; }
+    .feat img { width: 100%; aspect-ratio: 1399 / 734; object-fit: cover; display: block; }
 
     .feat-bar {
       display: flex;
@@ -267,6 +268,11 @@
     .feat-t { font-family: var(--serif); font-size: 18px; font-weight: 600; color: var(--ink); }
     .feat-n { font-size: 14px; color: var(--mute); }
     .feat-n b { color: var(--hot); font-weight: 600; }
+    .feat-n a {
+      color: var(--accent);
+      border-bottom: 1px solid var(--accent-soft);
+    }
+    .feat-n a:hover { border-bottom-color: var(--accent); }
 
     .badge {
       display: inline-block;
@@ -319,6 +325,11 @@
 
     .item p { font-size: 15px; }
     .item b { color: var(--ink); font-weight: 600; }
+    .item p a {
+      color: var(--accent);
+      border-bottom: 1px solid var(--accent-soft);
+    }
+    .item p a:hover { border-bottom-color: var(--accent); }
 
     .new {
       display: inline-block;
@@ -587,13 +598,15 @@
     </section>
 
     <!-- ===================== Featured ===================== -->
-    <a class="feat" href="https://www.worldlabs.ai/blog/atlas" target="_blank" rel="noopener">
-      <img src="assets/img/papers/Atlas.jpg" alt="Atlas: A World Model for Spatial Intelligence" fetchpriority="high" decoding="async" />
+    <article class="feat">
+      <a href="https://www.worldlabs.ai/blog/atlas" target="_blank" rel="noopener">
+        <img src="assets/img/papers/Atlas.jpg" alt="Atlas: A World Model for Spatial Intelligence" fetchpriority="high" decoding="async" />
+      </a>
       <div class="feat-bar">
-        <div class="feat-t"><span class="badge">Latest</span>Atlas: A World Model for Spatial Intelligence</div>
-        <div class="feat-n">World Labs, 2026 &nbsp;·&nbsp; I led <b>Atlas 3D</b> — reconstruction and explicit 3D outputs</div>
+        <div class="feat-t"><span class="badge">Latest</span><a href="https://www.worldlabs.ai/blog/atlas" target="_blank" rel="noopener">Atlas: A World Model for Spatial Intelligence</a></div>
+        <div class="feat-n">World Labs, 2026 &nbsp;·&nbsp; I co-led <b>Atlas 3D</b> with <a href="https://bardienus.com/" target="_blank" rel="noopener">Bardienus Duisterhof</a> — reconstruction and explicit 3D outputs</div>
       </div>
-    </a>
+    </article>
 
     <!-- ===================== News ===================== -->
     <section id="news" class="sec">
@@ -603,7 +616,7 @@
       </div>
 
       <div class="news">
-        <div class="item"><div class="date">Sep 1, 2026</div><p>World Labs released <b>Atlas</b>, a world model for spatial intelligence. I led <b>Atlas 3D</b>.<span class="new">New</span></p></div>
+        <div class="item"><div class="date">Sep 1, 2026</div><p>World Labs released <b>Atlas</b>, a world model for spatial intelligence. I co-led <b>Atlas 3D</b> with <a href="https://bardienus.com/" target="_blank" rel="noopener">Bardienus Duisterhof</a>.<span class="new">New</span></p></div>
         <div class="item"><div class="date">Jun 12, 2026</div><p><b>World Tracing</b> (first author) is out — paper, project page, code, and live demo are available.</p></div>
         <div class="item"><div class="date">Feb 20, 2026</div><p><b>RigMo</b> (first author) accepted by <b>CVPR 2026</b>; code and data will be released soon.</p></div>
         <div class="item"><div class="date">Nov 14, 2025</div><p>Joining <b>World Labs</b> in San Francisco as a Research Scientist Intern from January 2026.</p></div>
