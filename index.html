@@ -13,7 +13,6 @@
   <meta name="twitter:card" content="summary_large_image" />
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link rel="preload" as="image" href="assets/img/papers/Atlas.jpg" fetchpriority="high">
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;family=Source+Serif+4:opsz,wght@8..60,400;8..60,600&amp;display=swap" rel="stylesheet">
   <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'><rect width='64' height='64' fill='%23ffffff'/><text x='32' y='45' font-family='Georgia,serif' font-size='40' text-anchor='middle' fill='%231b3fa0'>H</text></svg>">
 
@@ -235,60 +234,6 @@
     .contact span.wc:hover .tip { opacity: 1; }
 
     /* ==========================================================
-       Featured banner
-       ========================================================== */
-    .feat {
-      display: block;
-      border: 1px solid var(--line);
-      border-radius: 8px;
-      overflow: hidden;
-      margin-bottom: 8px;
-      transition: box-shadow 0.25s ease, border-color 0.25s ease;
-    }
-
-    .feat:hover {
-      border-color: #d7d7d1;
-      box-shadow: 0 8px 26px -14px rgba(22, 24, 29, 0.28);
-    }
-
-    .feat > a { display: block; }
-    .feat img { width: 100%; aspect-ratio: 1399 / 734; object-fit: cover; display: block; }
-
-    .feat-bar {
-      display: flex;
-      align-items: baseline;
-      justify-content: space-between;
-      gap: 16px;
-      flex-wrap: wrap;
-      padding: 14px 18px;
-      border-top: 1px solid var(--line);
-      background: var(--bg-soft);
-    }
-
-    .feat-t { font-family: var(--serif); font-size: 18px; font-weight: 600; color: var(--ink); }
-    .feat-n { font-size: 14px; color: var(--mute); }
-    .feat-n b { color: var(--hot); font-weight: 600; }
-    .feat-n a {
-      color: var(--accent);
-      border-bottom: 1px solid var(--accent-soft);
-    }
-    .feat-n a:hover { border-bottom-color: var(--accent); }
-
-    .badge {
-      display: inline-block;
-      font-size: 11.5px;
-      font-weight: 600;
-      letter-spacing: 0.05em;
-      text-transform: uppercase;
-      color: var(--accent);
-      background: var(--accent-soft);
-      border-radius: 3px;
-      padding: 2px 7px;
-      vertical-align: 1.5px;
-      margin-right: 8px;
-    }
-
-    /* ==========================================================
        Sections
        ========================================================== */
     .sec { padding: 44px 0 8px; }
@@ -397,6 +342,8 @@
 
     .note { font-size: 13.5px; color: var(--mute); margin-top: 4px; }
     .note b { color: var(--hot); font-weight: 600; }
+    .note a { color: var(--accent); border-bottom: 1px solid var(--accent-soft); }
+    .note a:hover { border-bottom-color: var(--accent); }
 
     .links {
       display: flex;
@@ -536,11 +483,10 @@
       .pets { grid-template-columns: minmax(0, 1fr); gap: 18px; }
       .pets > img { width: 100%; max-width: 260px; height: 260px; }
 
-      .feat-bar { padding: 12px 14px; }
     }
 
     @media (max-width: 560px) {
-      /* Drop the wordmark so all five section links fit without scrolling;
+      /* Drop the wordmark so all six section links fit without scrolling;
          the name is repeated immediately below in the intro. */
       .nav-name { display: none; }
       .nav-in { gap: 0; }
@@ -562,6 +508,7 @@
         <ul class="nav-links">
           <li><a href="#top">About</a></li>
           <li><a href="#news">News</a></li>
+          <li><a href="#products">Products</a></li>
           <li><a href="#publications">Publications</a></li>
           <li><a href="#experience">Experience</a></li>
           <li><a href="#service">Service</a></li>
@@ -590,23 +537,12 @@
           <a href="https://scholar.google.com/citations?hl=zh-CN&amp;user=KeDuEtcAAAAJ" target="_blank" rel="noopener">Google Scholar</a>
           <a href="https://github.com/haoz19" target="_blank" rel="noopener">GitHub</a>
           <a href="https://x.com/HaoZhang623" target="_blank" rel="noopener">X</a>
-          <a href="assets/CV.pdf" target="_blank" rel="noopener">CV</a>
+          <a href="https://www.linkedin.com/in/haoz19/" target="_blank" rel="noopener">LinkedIn</a>
           <a href="https://www.xiaohongshu.com/user/profile/5d7dbb7b00000000010089e3" target="_blank" rel="noopener">小红书</a>
           <span class="wc">WeChat<span class="tip">zh17603602632</span></span>
         </div>
       </div>
     </section>
-
-    <!-- ===================== Featured ===================== -->
-    <article class="feat">
-      <a href="https://www.worldlabs.ai/blog/atlas" target="_blank" rel="noopener">
-        <img src="assets/img/papers/Atlas.jpg" alt="Atlas: A World Model for Spatial Intelligence" fetchpriority="high" decoding="async" />
-      </a>
-      <div class="feat-bar">
-        <div class="feat-t"><span class="badge">Latest</span><a href="https://www.worldlabs.ai/blog/atlas" target="_blank" rel="noopener">Atlas: A World Model for Spatial Intelligence</a></div>
-        <div class="feat-n">World Labs, 2026 &nbsp;·&nbsp; I co-led <b>Atlas 3D</b> with <a href="https://bardienus.com/" target="_blank" rel="noopener">Bardienus Duisterhof</a> — reconstruction and explicit 3D outputs</div>
-      </div>
-    </article>
 
     <!-- ===================== News ===================== -->
     <section id="news" class="sec">
@@ -616,7 +552,8 @@
       </div>
 
       <div class="news">
-        <div class="item"><div class="date">Sep 24, 2026</div><p><b>World Tracing</b> (first author) accepted by <b>NeurIPS 2026</b> as a Spotlight.<span class="new">New</span></p></div>
+        <div class="item"><div class="date">Nov 5, 2026</div><p>World Labs released <a href="https://worldlabs.ai/blog/atlas-realtime" target="_blank" rel="noopener"><b>Frameboy</b></a>, a research preview for exploring <b>Atlas</b> worlds in real time (<a href="https://frameboy.worldlabs.ai" target="_blank" rel="noopener">try it</a>).<span class="new">New</span></p></div>
+        <div class="item"><div class="date">Sep 24, 2026</div><p><b>World Tracing</b> (first author) accepted by <b>NeurIPS 2026</b> as a Spotlight.</p></div>
         <div class="item"><div class="date">Sep 1, 2026</div><p>World Labs released <b>Atlas</b>, a world model for spatial intelligence. I co-led <b>Atlas 3D</b> with <a href="https://bardienus.com/" target="_blank" rel="noopener">Bardienus Duisterhof</a>.</p></div>
         <div class="item"><div class="date">Jul 19, 2026</div><p><b>FreeOrbit4D</b> accepted by <b>SIGGRAPH 2026</b>.</p></div>
         <div class="item"><div class="date">Jul 13, 2026</div><p><b>RegHead</b> (<b>ECCV 2026</b>) is out — project page, paper, code, and dataset.</p></div>
@@ -639,6 +576,43 @@
         </div>
 
         <button class="more" type="button" id="news-more" aria-expanded="false" aria-controls="old-news">Show earlier news</button>
+      </div>
+    </section>
+
+    <!-- ===================== Products ===================== -->
+    <section id="products" class="sec">
+      <div class="sec-h">
+        <h2>Products</h2>
+        <span class="sub">World Labs</span>
+      </div>
+
+      <div class="pub">
+        <a class="pub-img" href="https://www.worldlabs.ai/blog/atlas" target="_blank" rel="noopener">
+          <img loading="lazy" decoding="async" src="assets/img/papers/Atlas.webp" alt="Atlas" />
+        </a>
+        <div>
+          <div class="venue">World Labs <span class="sep">·</span> Sep 2026</div>
+          <h3><a href="https://www.worldlabs.ai/blog/atlas" target="_blank" rel="noopener">Atlas: A World Model for Spatial Intelligence</a></h3>
+          <p class="note">I co-led <b>Atlas 3D</b> with <a href="https://bardienus.com/" target="_blank" rel="noopener">Bardienus Duisterhof</a> — reconstruction and explicit 3D outputs.</p>
+          <div class="links">
+            <a href="https://www.worldlabs.ai/blog/atlas" target="_blank" rel="noopener">Blog</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="pub">
+        <a class="pub-img" href="https://worldlabs.ai/blog/atlas-realtime" target="_blank" rel="noopener">
+          <img loading="lazy" decoding="async" src="assets/img/papers/Frameboy.webp" alt="Frameboy" />
+        </a>
+        <div>
+          <div class="venue">World Labs <span class="sep">·</span> Nov 2026</div>
+          <h3><a href="https://worldlabs.ai/blog/atlas-realtime" target="_blank" rel="noopener">Frameboy: Atlas in Real-time</a></h3>
+          <p class="note">Research preview for exploring Atlas worlds live in the browser at up to 15 fps.</p>
+          <div class="links">
+            <a href="https://worldlabs.ai/blog/atlas-realtime" target="_blank" rel="noopener">Blog</a>
+            <a href="https://frameboy.worldlabs.ai" target="_blank" rel="noopener">Demo</a>
+          </div>
+        </div>
       </div>
     </section>
 
